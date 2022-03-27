@@ -1,173 +1,158 @@
 <!DOCTYPE html>
 <html lang="es-AR">
-  <head>
-  	<!-- css -->
-  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  	<link rel="stylesheet" href="custom.css">
+<head>
+  <!-- css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="custom.css">
 
-  	<!-- boostrap javascript -->
-  	<script scr="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-		<script scr="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></script>
-
-
-  	<title>programa css</title>
-  </head>
+  <!-- boostrap javascript -->
+  <script scr="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script scr="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></script>
 
 
-  <body>
-
-<!--   	<script>
-
-  		getData();
-
-  		async function getData(){
-  			const response = await fetch('https://github.com/AlePaff/alepaff.github.io/blob/main/data.csv');
-  			const data = await response.text();
-  			console.log(data);
-  		}
-  		
-  	</script> -->
+  <title>Recopilación</title>
+</head>
 
 
+<body>
 
+	<div id="todas">  <!-- En realidad aplica para todo body, pero lo dejo así porque luego lo voy a cambiar -->
 
+	<section class="section seccion-material-apuntes">
+		<div class="container">
+			<h2 class="section-title text-center">Material y apuntes</h2>
+			<p class="section-subtitle text-center">Paginas que engloban muchas materias</p>
+		</div>
+		<!-- row-cols es para abreviar y no poner una linea extra. Indica columnas minimas -->
+			<div class="row row-cols-1 row-cols-md-2 g-4">
+			  <div class="col">
+			    <div class="card">
+			      <img src="images/wiki-fiuba.jpg" class="card-img-top" alt="wiki-fiuba">
+			      <div class="card-body">
+			        <h5 class="card-title">Wiki Fiuba</h5>
+			        <p class="card-text">Espacio colaborativo donde podés encontrar materiales de estudio para la carrera.</p>
+			      </div>
+			    </div>
+			  </div>
 
-		<section class="section adminstrativo">
-			<div class="container">
-				<h2 class="section-title text-center">Material y apuntes</h2>
-				<p class="section-subtitle text-center">Paginas que engloban muchas materias</p>
+			  <div class="col">
+			    <div class="card">
+			      <img src="images/sk-fiuba.jpg" class="card-img-top" alt="sk-fiuba">
+			      <div class="card-body">
+			        <h5 class="card-title">SK FIUBA</h5>
+			        <p class="card-text">Guias, examenes y apuntes para las materias de ingeniería industrial</p>
+			      </div>
+<!-- 				            <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div> -->
+			    </div>
+			  </div>
+			  <div class="col">
+			    <div class="card">
+			      <img src="images/fiuba-drive.jpg" class="card-img-top" alt="...">
+			      <div class="card-body">
+			        <h5 class="card-title">Fiuba Drive</h5>
+			        <p class="card-text">Drive creado para subir material de tu curso y encontrar el de otros</p>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col">
+			    <div class="card">
+			      <img src="images/filadd.jpg" class="card-img-top" alt="...">
+			      <div class="card-body">
+			        <h5 class="card-title">Filadd</h5>
+			        <p class="card-text">Distintos recursos de varias materias de la fiuba</p>
+			      </div>
+			    </div>
+			  </div>
 			</div>
-
-			<!-- row-cols es para abreviar y no poner una linea extra. Indica columnas minimas -->
-				<div class="row row-cols-1 row-cols-md-2 g-4">
-				  <div class="col">
-				    <div class="card">
-				      <img src="images/wiki-fiuba.jpg" class="card-img-top" alt="...">
-				      <div class="card-body">
-				        <h5 class="card-title">Wiki Fiuba</h5>
-				        <p class="card-text">Espacio colaborativo donde podés encontrar materiales de estudio para la carrera.</p>
-				      </div>
-				    </div>
-				  </div>
-				  <div class="col">
-				    <div class="card">
-				      <img src="images/sk-fiuba.jpg" class="card-img-top" alt="...">
-				      <div class="card-body">
-				        <h5 class="card-title">SK FIUBA</h5>
-				        <p class="card-text">Guias, examenes y apuntes para las materias de ingeniería industrial</p>
-				      </div>
-				    </div>
-				  </div>
-				  <div class="col">
-				    <div class="card">
-				      <img src="images/fiuba-drive.jpg" class="card-img-top" alt="...">
-				      <div class="card-body">
-				        <h5 class="card-title">Fiuba Drive</h5>
-				        <p class="card-text">Drive creado para subir material de tu curso y encontrar el de otros</p>
-				      </div>
-				    </div>
-				  </div>
-				  <div class="col">
-				    <div class="card">
-				      <img src="images/filadd.jpg" class="card-img-top" alt="...">
-				      <div class="card-body">
-				        <h5 class="card-title">Filadd</h5>
-				        <p class="card-text">Distintos recursos de varias materias de la fiuba</p>
-				      </div>
-				    </div>
-				  </div>
-
-				</div>
-		</section>
+	</section>
 
 
-
-		<section class="section materias">
-			<div class="container">
-				<h2 class="section-title text-center">Cursos y Opiniones</h2>
+	<section class="section seccion-cursos-opiniones">
+		<div class="container">
+			<h2 class="section-title text-center">Cursos y Opiniones</h2>
+		</div>
+			<div class="row row-cols-1 row-cols-md-2 g-4">
+			  <div class="col">
+			    <div class="card">
+			      <img src="images/dolly.jpg" class="card-img-top" alt="...">
+			      <div class="card-body">
+			        <h5 class="card-title">Dolly Fiuba</h5>
+			        <p class="card-text">Encuestas sobre cada catedra y materia de la fiuba</p>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col">
+			    <div class="card">
+			      <img src="images/opiniones-fiuba.jpg" class="card-img-top" alt="...">
+			      <div class="card-body">
+			        <h5 class="card-title">FIUBA Opiniones de Cursos</h5>
+			        <p class="card-text">Opiniones sobre materias del depto de computación</p>
+			      </div>
+			    </div>
+			  </div>	
 			</div>
-
-				<div class="row row-cols-1 row-cols-md-2 g-4">
-				  <div class="col">
-				    <div class="card">
-				      <img src="images/dolly.jpg" class="card-img-top" alt="...">
-				      <div class="card-body">
-				        <h5 class="card-title">Dolly Fiuba</h5>
-				        <p class="card-text">Encuestas sobre cada catedra y materia de la fiuba</p>
-				      </div>
-				    </div>
-				  </div>
-				</div>
-				  <div class="col">
-				    <div class="card">
-				      <img src="images/opiniones-fiuba.jpg" class="card-img-top" alt="...">
-				      <div class="card-body">
-				        <h5 class="card-title">FIUBA Opiniones de Cursos</h5>
-				        <p class="card-text">Opiniones sobre materias del depto de computación</p>
-				      </div>
-				    </div>
-				  </div>
-				
-		</section>
+	</section>
 
 
-		<section class="section materias">
-			<div class="container">
-				<h2 class="section-title text-center">General</h2>
+	<section class="section seccion-general">
+		<div class="container">
+			<h2 class="section-title text-center">General</h2>
+		</div>
+			<div class="row row-cols-1 row-cols-md-2 g-4">
+			  <div class="col">
+			    <div class="card">
+			      <img src="images/fiuba-consultas.jpg" class="card-img-top" alt="...">
+			      <div class="card-body">
+			        <h5 class="card-title">Fiuba Consultas</h5>
+			        <p class="card-text">Grupo general sobre consultas, temas administrativos, noticias, polemica y memes</p>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col">
+			    <div class="card">
+			      <img src="images/foros-fiuba.jpg" class="card-img-top" alt="...">
+			      <div class="card-body">
+			        <h5 class="card-title">Foros Fiuba</h5>
+			        <p class="card-text">Foro general sobre discusión, materias y carreras de la fiuba</p>
+			      </div>
+			    </div>
+			  </div>
 			</div>
-
-				<div class="row row-cols-1 row-cols-md-3 g-4">
-				  <div class="col">
-				    <div class="card">
-				      <img src="images/fiuba-consultas.jpg" class="card-img-top" alt="...">
-				      <div class="card-body">
-				        <h5 class="card-title">Fiuba Consultas</h5>
-				        <p class="card-text">Grupo general sobre consultas, temas administrativos, noticias, polemica y memes</p>
-				      </div>
-				    </div>
-				  </div>
-				</div>
-				  <div class="col">
-				    <div class="card">
-				      <img src="images/foros-fiuba.jpg" class="card-img-top" alt="...">
-				      <div class="card-body">
-				        <h5 class="card-title">Foros Fiuba</h5>
-				        <p class="card-text">Foro general sobre discusión, materias y carreras de la fiuba</p>
-				      </div>
-				    </div>
-				  </div>
-				
-		</section>
+	</section>
 
 
-		<section class="section materias">
-			<div class="container">
-				<h2 class="section-title text-center">Organizativo</h2>
+	<section class="section seccion-organizacion">
+		<div class="container">
+			<h2 class="section-title text-center">Organizativo</h2>
+		</div>
+			<div class="row row-cols-1 row-cols-md-2 g-4">
+			  <div class="col">
+			    <div class="card">
+			      <img src="images/fiuba-map.jpg" class="card-img-top" alt="...">
+			      <div class="card-body">
+			        <h5 class="card-title">Fiuba Map</h5>
+			        <p class="card-text">Diagrama interactivo de correlatividades de materias de cada carrera </p>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col">
+			    <div class="card">
+			      <img src="images/fiuba-plan.jpg" class="card-img-top" alt="...">
+			      <div class="card-body">
+			        <h5 class="card-title">Fiuba Plan</h5>
+			        <p class="card-text">Organizador de horarios </p>
+			      </div>
+			    </div>
+			  </div>
 			</div>
+	</section>
 
-				<div class="row row-cols-1 row-cols-md-2 g-4">
-				  <div class="col">
-				    <div class="card">
-				      <img src="images/fiuba-map.jpg" class="card-img-top" alt="...">
-				      <div class="card-body">
-				        <h5 class="card-title">Fiuba Map</h5>
-				        <p class="card-text">Diagrama interactivo de correlatividades de materias de cada carrera </p>
-				      </div>
-				    </div>
-				  </div>
-				</div>
-				  <div class="col">
-				    <div class="card">
-				      <img src="images/fiuba-plan.jpg" class="card-img-top" alt="...">
-				      <div class="card-body">
-				        <h5 class="card-title">Fiuba Plan</h5>
-				        <p class="card-text">Organizador de horarios </p>
-				      </div>
-				    </div>
-				  </div>
-				
-		</section>
+</div>
 
 
-  </body>
+
+
+</body>
 </html>
