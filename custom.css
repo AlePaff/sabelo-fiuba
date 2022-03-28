@@ -1,3 +1,4 @@
+/*margen general de la pagina*/
 #todas{
 	margin-bottom: 30px;
 	margin-top: 40px;
@@ -10,19 +11,24 @@ section{
 	margin-left: 20px;
 }
 
-.card div:hover{
-	background-color: #f2abb2;
-}
-
-.seccion-material-apuntes{background-color: #f2f2f2;}
-.seccion-cursos-opiniones{background-color: #fff2f2;}
-.seccion-general{background-color: #f2aaa2;}
-.seccion-organizacion{background-color: #f2abb2;}
+/*colores de cada seccion*/
+.seccion-material-apuntes{background-color: #f9dbd4;}
+.seccion-cursos-opiniones{background-color: #EBE3DD;}
+.seccion-general{background-color: #DBEFF6;}
+.seccion-organizacion{background-color: #f2f2f2;}
 
 
+/*para que las imagenes queden todas del mismo tamaño*/
 .card-img-top {
     width: 100%;
     height: 20vw;
     /*object-fit: scale-down;       https://developer.mozilla.org/es/docs/Web/CSS/object-fit*/
     object-fit: cover;
+}
+
+
+
+#abajo{
+   text-align:center;
+   font-size: small;
 }
