@@ -12,7 +12,9 @@ section{
 }
 
 /*colores de cada seccion*/
-.seccion-material-apuntes{background-color: #f9dbd4;}
+.seccion-material-apuntes{background-color: #f9dfff;}
+/*.seccion-material-apuntes{background-color: #f9dbd4;}*/
+
 .seccion-cursos-opiniones{background-color: #EBE3DD;}
 .seccion-general{background-color: #DBEFF6;}
 .seccion-organizacion{background-color: #f2f2f2;}
@@ -36,3 +38,5 @@ section{
    text-align:center;
    font-size: small;
 }
+
+
