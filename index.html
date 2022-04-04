@@ -54,7 +54,7 @@
 
 		}
 		$(function(){
-			// $('#card_').append($(createCard('preset', "asdasdfiuba", "asdasdasd2349", "images")));		
+			// $('#card_').append($(createCard('preset_nombre', "descripcion", "link", "imagen")));
 
 			$('#card_fiuba_drive').append($(createCard('Fiuba Drive', 	"Drive creado para subir material de tu curso y encontrar el de otros", "https://sites.google.com/view/drive-fiuba/", "images/fiuba-drive.jpg")));
 			$('#card_wiki_fiuba').append($(createCard('Wiki Fiuba', 	"Espacio colaborativo donde podés encontrar materiales de estudio para la carrera", "http://wiki.foros-fiuba.com.ar/", "images/wiki-fiuba.jpg")));
@@ -63,10 +63,26 @@
 
 
 			$('#card_fiuba_consultas').append($(createCard('Fiuba Consultas', "Grupo general sobre consultas, temas administrativos, noticias, polemica y memes", "https://www.facebook.com/groups/fiubaconsultas2", "images/fiuba-consultas.jpg")));
+
+
+			$('#card_fiuba_opiniones_compu').append($(createCard('FIUBA Opiniones de Cursos', "Opiniones sobre materias del depto de computación", "https://fiuba-opiniones-de-curso.herokuapp.com/", "images/opiniones-fiuba.jpg")));
+			$('#card_dolly_fiuba').append($(createCard('Dolly Fiuba', "Encuestas sobre cada catedra y materia de la fiuba", "https://dollyfiuba.com/", "images/dolly.jpg")));
+
+
+			$('#card_fiuba_map').append($(createCard('Fiuba Map', "Diagrama interactivo de correlatividades de materias de cada carrera", "https://fede.dm/FIUBA-Map/", "images/fiuba-map.jpg")));
+			$('#card_fiuba_plan').append($(createCard('Fiuba Plan', "Organizador de horarios", "https://fede.dm/FIUBA-Plan/", "images/fiuba-plan.jpg")));
+
+
+			$('#card_grupos_fiuba').append($(createCard('Grupos fiuba', "Grupos de whatsapp de algunas materias", "https://linktr.ee/grupos_fiuba", "https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png")));
+			$('#card_fiubaverse').append($(createCard('Fiuba Verse', "Todo tipo de grupos de telegram, noticias", "https://fiubaverse.github.io/", "https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png")));
+
+
+			$('#card_mli_fiuba').append($(createCard('MLI fiuba', "Instagram del MLI sobre noticias y novedades de la fiuba", "https://www.instagram.com/mli.fiuba/?hl=es-la", "https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png")));
+			$('#card_FIUBA_Noticias').append($(createCard('Fiuba Noticias', "Canal de telegram con noticias sobre la fiuba", "https://t.me/s/FIUBA_Noticias", "https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png")));
+
+
 		});
 	</script>
-
-
 
 
 
@@ -87,9 +103,6 @@
 
 			</div>
 	</section>
-
-
-
 
 
 
@@ -122,34 +135,20 @@
 
 
 
+
+
 	<section class="section seccion-cursos-opiniones">
 		<div class="container">
 			<h2 class="section-title text-center">Cursos y Opiniones</h2>
 		</div>
 			<div class="row row-cols-1 row-cols-md-2 g-4">
 
-			  <div class="col">
-			    <div class="card">
-			      <img src="images/dolly.jpg" class="card-img-top" alt="...">
-			      <div class="card-body">
-			        <h5 class="card-title">Dolly Fiuba</h5>
-			        <p class="card-text">Encuestas sobre cada catedra y materia de la fiuba</p>
-			        <a href="https://dollyfiuba.com/" class="stretched-link" target="_blank"></a>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="col">
-			    <div class="card">
-			      <img src="images/opiniones-fiuba.jpg" class="card-img-top" alt="...">
-			      <div class="card-body">
-			        <h5 class="card-title">FIUBA Opiniones de Cursos</h5>
-			        <p class="card-text">Opiniones sobre materias del depto de computación</p>
-			        <a href="https://fiuba-opiniones-de-curso.herokuapp.com/" class="stretched-link" target="_blank"></a>
-			      </div>
-			    </div>
-			  </div>	
+			<div id="card_fiuba_opiniones_compu"></div>
+			<div id="card_dolly_fiuba"></div>
+
 			</div>
 	</section>
+
 
 
 
@@ -158,26 +157,10 @@
 			<h2 class="section-title text-center">Organizativo</h2>
 		</div>
 			<div class="row row-cols-1 row-cols-md-2 g-4">
-			  <div class="col">
-			    <div class="card">
-			      <img src="images/fiuba-map.jpg" class="card-img-top" alt="...">
-			      <div class="card-body">
-			        <h5 class="card-title">Fiuba Map</h5>
-			        <p class="card-text">Diagrama interactivo de correlatividades de materias de cada carrera </p>
-			        <a href="https://fede.dm/FIUBA-Map/" class="stretched-link" target="_blank"></a>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="col">
-			    <div class="card">
-			      <img src="images/fiuba-plan.jpg" class="card-img-top" alt="...">
-			      <div class="card-body">
-			        <h5 class="card-title">Fiuba Plan</h5>
-			        <p class="card-text">Organizador de horarios </p>
-			        <a href="https://fede.dm/FIUBA-Plan/" class="stretched-link" target="_blank"></a>
-			      </div>
-			    </div>
-			  </div>
+
+			<div id="card_fiuba_map"></div>
+			<div id="card_fiuba_plan"></div>
+
 			</div>
 	</section>
 
@@ -188,26 +171,10 @@
 			<h2 class="section-title text-center">Grupos</h2>
 		</div>
 			<div class="row row-cols-1 row-cols-md-2 g-4">
-			  <div class="col">
-			    <div class="card">
-			      <img src="images/fiuba-map.jpg" class="card-img-top" alt="...">
-			      <div class="card-body">
-			        <h5 class="card-title">Fiuba Verse</h5>
-			        <p class="card-text">Todo tipo de grupos de telegram, noticias </p>
-			        <a href="https://fiubaverse.github.io/" class="stretched-link" target="_blank"></a>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="col">
-			    <div class="card">
-			      <img src="images/fiuba-plan.jpg" class="card-img-top" alt="...">
-			      <div class="card-body">
-			        <h5 class="card-title">Grupos fiuba</h5>
-			        <p class="card-text">Algunos grupos de whatsapp</p>
-			        <a href="https://linktr.ee/grupos_fiuba" class="stretched-link" target="_blank"></a>
-			      </div>
-			    </div>
-			  </div>
+
+			<div id="card_grupos_fiuba"></div>
+			<div id="card_fiubaverse"></div>
+
 			</div>
 	</section>
 
@@ -219,26 +186,10 @@
 			<h2 class="section-title text-center">Noticias</h2>
 		</div>
 			<div class="row row-cols-1 row-cols-md-2 g-4">
-			  <div class="col">
-			    <div class="card">
-			      <img src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png" class="card-img-top" alt="...">
-			      <div class="card-body">
-			        <h5 class="card-title">Fiuba Noticias</h5>
-			        <p class="card-text">Canal de telegram con noticias sobre la fiuba</p>
-			        <a href="https://t.me/s/FIUBA_Noticias" class="stretched-link" target="_blank"></a>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="col">
-			    <div class="card">
-			      <img src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png" class="card-img-top" alt="...">
-			      <div class="card-body">
-			        <h5 class="card-title">MLI fiuba</h5>
-			        <p class="card-text">Instagram del MLI sobre noticias y novedades de la fiuba</p>
-			        <a href="https://www.instagram.com/mli.fiuba/?hl=es-la" class="stretched-link" target="_blank"></a>
-			      </div>
-			    </div>
-			  </div>
+
+			<div id="card_mli_fiuba"></div>
+			<div id="card_FIUBA_Noticias"></div>
+
 			</div>
 	</section>
 
