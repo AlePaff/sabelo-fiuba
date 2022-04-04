@@ -12,12 +12,63 @@
   <script scr="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 	<script scr="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></script>
 
+	<!-- icono alertas -->
+	<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+	  <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+	    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+	  </symbol>
+	</svg>
+
+
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
 
   <title>Recopilación</title>
 </head>
 
 
 <body>
+
+
+
+	<script>
+		function createCard(nombre, desc, link, linkImage) {
+			return `
+						  <div class="col">
+			    <div class="card">
+			      <img src=${linkImage} class="card-img-top" alt="...">
+			      <div class="card-body">
+			        <h5 class="card-title">${nombre}</h5>
+			        <p class="card-text">${desc}</p>
+			        <a href=${link} class="stretched-link" target="_blank"></a>
+			      </div>
+			    </div>
+			  </div>`
+			 //            <div class="card-footer">
+    //   <small class="text-muted">Last updated 3 mins ago</small>
+    // </div> 
+			  ;
+
+		}
+		$(function(){
+			// $('#card_').append($(createCard('preset', "asdasdfiuba", "asdasdasd2349", "images")));		
+
+			$('#card_fiuba_drive').append($(createCard('Fiuba Drive', 	"Drive creado para subir material de tu curso y encontrar el de otros", "https://sites.google.com/view/drive-fiuba/", "images/fiuba-drive.jpg")));
+			$('#card_wiki_fiuba').append($(createCard('Wiki Fiuba', 	"Espacio colaborativo donde podés encontrar materiales de estudio para la carrera", "http://wiki.foros-fiuba.com.ar/", "images/wiki-fiuba.jpg")));
+			$('#card_sk_fiuba').append($(createCard('SK FIUBA',	 		"Guias, examenes y apuntes para las materias de ingeniería industrial", "https://sites.google.com/view/skfiuba/materias?authuser=0", "images/sk-fiuba.jpg")));
+			$('#card_filadd').append($(createCard('Filadd', 			"Distintos recursos de varias materias de la fiuba", "https://filadd.com/resultados-aportes/uba/ingenieria-uba/probabilidad-y-estadistica-a/51/2349", "images/filadd.jpg")));
+
+
+			$('#card_fiuba_consultas').append($(createCard('Fiuba Consultas', "Grupo general sobre consultas, temas administrativos, noticias, polemica y memes", "https://www.facebook.com/groups/fiubaconsultas2", "images/fiuba-consultas.jpg")));
+		});
+	</script>
+
+
+
+
 
 	<div id="todas">  <!-- En realidad aplica para todo body, pero lo dejo así porque luego lo voy a cambiar -->
 
@@ -28,55 +79,18 @@
 		</div>
 		<!-- row-cols es para abreviar y no poner una linea extra. Indica columnas minimas -->
 			<div class="row row-cols-1 row-cols-md-2 g-4">
-			  <div class="col">
-			    <div class="card">
-			      <img src="images/fiuba-drive.jpg" class="card-img-top" alt="...">
-			      <div class="card-body">
-			        <h5 class="card-title">Fiuba Drive</h5>
-			        <p class="card-text">Drive creado para subir material de tu curso y encontrar el de otros</p>
-			        <a href="https://sites.google.com/view/drive-fiuba/" class="stretched-link" target="_blank"></a>
-			      </div>
-			    </div>
-			  </div>
 
-			  <div class="col">
-			    <div class="card">
-			      <img src="images/wiki-fiuba.jpg" class="card-img-top" alt="wiki-fiuba">
-			      <div class="card-body">
-			        <h5 class="card-title">Wiki Fiuba</h5>
-			        <p class="card-text">Espacio colaborativo donde podés encontrar materiales de estudio para la carrera.</p>
-			        <a href="http://wiki.foros-fiuba.com.ar/" class="stretched-link" target="_blank"></a>
-			      </div>
-			    </div>
-			  </div>
+			<div id="card_fiuba_drive"></div>
+			<div id="card_wiki_fiuba"></div>
+			<div id="card_sk_fiuba"></div>
+			<div id="card_filadd"></div>
 
-			  <div class="col">
-			    <div class="card">
-			      <img src="images/sk-fiuba.jpg" class="card-img-top" alt="sk-fiuba">
-			      <div class="card-body">
-			        <h5 class="card-title">SK FIUBA</h5>
-			        <p class="card-text">Guias, examenes y apuntes para las materias de ingeniería industrial</p>
-			        <a href="https://sites.google.com/view/skfiuba/materias?authuser=0" class="stretched-link" target="_blank"></a>
-			      </div>			      
-<!-- 				            <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
-    </div> -->
-
-			    </div>			    
-			  </div>
-
-			  <div class="col">
-			    <div class="card">
-			      <img src="images/filadd.jpg" class="card-img-top" alt="...">
-			      <div class="card-body">
-			        <h5 class="card-title">Filadd</h5>
-			        <p class="card-text">Distintos recursos de varias materias de la fiuba</p>
-			        <a href="https://filadd.com/resultados-aportes/uba/ingenieria-uba/probabilidad-y-estadistica-a/51/2349" class="stretched-link" target="_blank"></a>
-			      </div>
-			    </div>
-			  </div>
 			</div>
 	</section>
+
+
+
+
 
 
 
@@ -85,28 +99,26 @@
 			<h2 class="section-title text-center">General</h2>
 		</div>
 			<div class="row row-cols-1 row-cols-md-2 g-4">
-			  <div class="col">
+
+			<div id="card_fiuba_consultas"></div>
+
+			<div class="col">
 			    <div class="card">
-			      <img src="images/fiuba-consultas.jpg" class="card-img-top" alt="...">
+			      <a href="http://www.foros-fiuba.com.ar/" target="_blank"><img src="images/foros-fiuba.jpg" class="card-img-top" alt="..."></a>
 			      <div class="card-body">
-			        <h5 class="card-title">Fiuba Consultas</h5>
-			        <p class="card-text">Grupo general sobre consultas, temas administrativos, noticias, polemica y memes</p>
-			        <a href="https://www.facebook.com/groups/fiubaconsultas2" class="stretched-link" target="_blank"></a>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="col">
-			    <div class="card">
-			      <img src="images/foros-fiuba.jpg" class="card-img-top" alt="...">
-			      <div class="card-body">
-			        <h5 class="card-title">Foros Fiuba</h5>
+			        <h5 class="card-title" title="En desuso!">
+			        	Foros Fiuba
+			        	<svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+			     		</h5>
 			        <p class="card-text">Foro general sobre discusión, materias y carreras de la fiuba</p>
-			        <a href="http://www.foros-fiuba.com.ar/" class="stretched-link" target="_blank"></a>
+			        <!-- <a href="http://www.foros-fiuba.com.ar/" class="stretched-link" target="_blank"></a> -->
 			      </div>
-			    </div>
-			  </div>
+			    </div>			    
+			</div>
+
 			</div>
 	</section>
+
 
 
 
@@ -115,6 +127,7 @@
 			<h2 class="section-title text-center">Cursos y Opiniones</h2>
 		</div>
 			<div class="row row-cols-1 row-cols-md-2 g-4">
+
 			  <div class="col">
 			    <div class="card">
 			      <img src="images/dolly.jpg" class="card-img-top" alt="...">
@@ -254,9 +267,6 @@
 			  </div>
 			</div>
 
-
-
-
 		</section>
 
 
@@ -269,7 +279,7 @@
 
 <footer>
   <div id="abajo">			
-    	<a href="https://github.com/AlePaff/alepaff.github.io" target="_blank"><img src="https://github.githubassets.com/favicons/favicon.svg" alt="github" height="32" width="32"></a>
+    	<a href="https://github.com/AlePaff/alepaff.github.io" target="_blank"><img src="https://github.githubassets.com/favicons/favicon.svg" alt="github" height="32" width="32" title="Ir al repositorio"></a>
     	<br>ultima actualización: 27/02/22
   </div>
 </footer>
