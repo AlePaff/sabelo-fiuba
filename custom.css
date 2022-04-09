@@ -11,22 +11,29 @@ section{
 	margin-left: 20px;
 }
 
+footer{
+	/*Tal vez un color gradiente https://cssgradient.io/*/
+	padding: 20px;
+	background-color: #1b2932;
+}
 
 #abajo{
-   text-align:center;
-   font-size: small;
+	color: white;		/*Color del texto*/
+	text-align:center;
+	font-size: small;
 }
 
 /*colores de cada seccion*/
 .seccion-material-apuntes{background-color: #f9dfff;}
 /*.seccion-material-apuntes{background-color: #f9dbd4;}*/
-
 .seccion-cursos-opiniones{background-color: #EBE3DD;}
 .seccion-general{background-color: #DBEFF6;}
 .seccion-organizacion{background-color: #f2f2f2;}
 .seccion-noticias{background-color: #83D0FD;}
 .seccion-grupos{background-color: #BFFBF5;}
 .seccion-varios{background-color: #B3FDCC;}
+
+/*body{background-color: #B3FDCC;}*/
 
 
 /*para que las imagenes queden todas del mismo tamaño*/
@@ -37,19 +44,34 @@ section{
     object-fit: cover;
 }
 
-/*https://www.w3schools.com/howto/howto_css_zoom_hover.asp*/
-        .geeks {
-            width: auto;
-            height: auto;
-            overflow: hidden;
-            margin: 0 auto;
-        }
-      
-        .geeks img {
-            width: 100%;
-            transition: 0.2s all ease-in-out;
-        }
-      
-        .geeks:hover img {
-            transform: scale(1.1);
-        }
+
+/*zoom al pasar el mouse por encima https://w3bits.com/css-image-hover-zoom/ */
+/* [1] The container */
+.img-hover-zoom {
+  height: 300px; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .2s ease;
+}
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.05);
+}
+
+
+
+/*invertir colores del icono de github*/
+.invert_effect {
+  filter: invert(100%);
+}
+
+
+/*https://www.w3schools.com/howto/howto_css_transition_hover.asp*/
+.card-varios-transition:hover {
+	background-color: #f4511e;
+    color: white;
+    opacity: 0.6;
+	transition: 0.2s;
+}

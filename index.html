@@ -38,11 +38,14 @@
 			return `
 						  <div class="col">
 			    <div class="card">
-			      <img src=${linkImage} class="card-img-top" alt="...">
+						<a href=${link} target="_blank">
+						<div class="img-hover-zoom img-hover-zoom--xyz">
+			      <img src=${linkImage} class="card-img-top" onerror="this.onerror=null; this.src='images/placeholder.png'"></a></div>
+
 			      <div class="card-body">
 			        <h5 class="card-title">${nombre}</h5>
 			        <p class="card-text">${desc}</p>
-			        <a href=${link} class="stretched-link" target="_blank"></a>
+			        
 			      </div>
 			    </div>
 			  </div>`
@@ -72,12 +75,12 @@
 			$('#card_fiuba_plan').append($(createCard('Fiuba Plan', "Organizador de horarios", "https://fede.dm/FIUBA-Plan/", "images/fiuba-plan.jpg")));
 
 
-			$('#card_grupos_fiuba').append($(createCard('Grupos fiuba', "Grupos de whatsapp de algunas materias", "https://linktr.ee/grupos_fiuba", "https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png")));
-			$('#card_fiubaverse').append($(createCard('Fiuba Verse', "Todo tipo de grupos de telegram, noticias", "https://fiubaverse.github.io/", "https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png")));
+			$('#card_grupos_fiuba').append($(createCard('Grupos fiuba', "Grupos de whatsapp de algunas materias", "https://linktr.ee/grupos_fiuba", "images/grupos-fiuba.png")));
+			$('#card_fiubaverse').append($(createCard('Fiuba Verse', "Todo tipo de grupos de telegram, noticias", "https://fiubaverse.github.io/", "images/fiubaverse.png")));
 
 
-			$('#card_mli_fiuba').append($(createCard('MLI fiuba', "Instagram del MLI sobre noticias y novedades de la fiuba", "https://www.instagram.com/mli.fiuba/?hl=es-la", "https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png")));
-			$('#card_FIUBA_Noticias').append($(createCard('Fiuba Noticias', "Canal de telegram con noticias sobre la fiuba", "https://t.me/s/FIUBA_Noticias", "https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png")));
+			$('#card_mli_fiuba').append($(createCard('MLI fiuba', "Instagram del MLI sobre noticias y novedades de la fiuba", "https://www.instagram.com/mli.fiuba/?hl=es-la", "images/mli.fiuba.png")));
+			$('#card_FIUBA_Noticias').append($(createCard('Fiuba Noticias', "Canal de telegram con noticias sobre la fiuba", "https://t.me/s/FIUBA_Noticias", "images/telegram-noticias.png")));
 
 		});
 	</script>
@@ -85,6 +88,9 @@
 
 </head>
 <body>
+
+
+
 
 
 
@@ -110,7 +116,6 @@
 
 
 
-
 	<section class="section seccion-general">
 		<div class="container">
 			<h2 class="section-title text-center">General</h2>
@@ -121,9 +126,12 @@
 
 			<div class="col">
 			    <div class="card">
-			      <a href="http://www.foros-fiuba.com.ar/" target="_blank"><div class="geeks">
-			      	<img src="images/foros-fiuba.jpg" class="card-img-top" alt="..."></div>
-			      </a>
+
+			    	<div class="img-hover-zoom img-hover-zoom--xyz">
+			      <a href="http://www.foros-fiuba.com.ar/" target="_blank">
+			      	<img src="images/foros-fiuba.jpg" onerror="this.onerror=null; this.src='images/placeholder.png'" class="card-img-top" alt="..."></a>
+			      </div>
+
 			      <div class="card-body">
 			        <h5 class="card-title" title="En desuso!">
 			        	Foros Fiuba
@@ -205,27 +213,29 @@
 			<div class="container">
 				<h2 class="section-title text-center">Varios</h2>
 			</div>
+
 			<div class="card-deck">
 			  <div class="card">
 			    <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-			    <div class="card-body">
+			    <div class="card-varios-transition">
+			    <div class="card-body">			  	
 		        <h5 class="card-title">Github topic fiuba</h5>
 		        <p class="card-text">Ultimos proyectos </p>
 		        <a href="https://github.com/topics/fiuba?o=desc&s=updated" class="stretched-link" target="_blank"></a>
-			    </div>
+			    </div></div>
 			  </div>
+
 			  <div class="card">
 			    <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+					<div class="card-varios-transition">
 			    <div class="card-body">
 		        <h5 class="card-title">Catalogo fiuba</h5>
 		        <p class="card-text">Para buscar libros y ver si estan disponibles en la biblioteca (visitar su facebook para ultimas novedades)</p>
 		        <a href="http://catalogo.fi.uba.ar/" class="stretched-link" target="_blank"></a>
-			    </div>
+			    </div></div>
 			  </div>
 			</div>
-
-		</section>
-
+	</section>
 
 
 
@@ -236,9 +246,9 @@
 
 <footer>
   <div id="abajo">			
-    	<a href="https://github.com/AlePaff/alepaff.github.io" target="_blank"><img src="https://github.githubassets.com/favicons/favicon.svg" alt="github" height="32" width="32" title="Ir al repositorio"></a>
+    	<a href="https://github.com/AlePaff/alepaff.github.io" target="_blank" style="padding-left:10px;"><img src="https://github.githubassets.com/favicons/favicon.svg" class="invert_effect" alt="github" height="32" width="32" title="Ir al repositorio"></a>
 
-    	<a href="https://docs.google.com/forms/d/e/1FAIpQLSe9v8y4L8Dtek3y9u8d5uSiB5SK-P-3FUvo1nhOJIF-pD8j3A/viewform?embedded=true" target="_blank"><img src="https://www.svgrepo.com/show/217145/forms-document.svg" alt="github" height="32" width="32" title="Añadir un nuevo proyecto"></a>
+    	<a href="https://docs.google.com/forms/d/e/1FAIpQLSe9v8y4L8Dtek3y9u8d5uSiB5SK-P-3FUvo1nhOJIF-pD8j3A/viewform?embedded=true" target="_blank" style="padding-left:10px;"><img src="https://www.svgrepo.com/show/217145/forms-document.svg" alt="github" height="32" width="32" title="Añadir un nuevo proyecto"></a>
 
     	<br>ultima actualización:
     	<script>document.write(fechaActualizacion);</script>
