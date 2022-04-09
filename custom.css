@@ -11,6 +11,12 @@ section{
 	margin-left: 20px;
 }
 
+
+#abajo{
+   text-align:center;
+   font-size: small;
+}
+
 /*colores de cada seccion*/
 .seccion-material-apuntes{background-color: #f9dfff;}
 /*.seccion-material-apuntes{background-color: #f9dbd4;}*/
@@ -23,7 +29,6 @@ section{
 .seccion-varios{background-color: #B3FDCC;}
 
 
-
 /*para que las imagenes queden todas del mismo tamaño*/
 .card-img-top {
     width: 100%;
@@ -32,11 +37,19 @@ section{
     object-fit: cover;
 }
 
-
-
-#abajo{
-   text-align:center;
-   font-size: small;
-}
-
-
+/*https://www.w3schools.com/howto/howto_css_zoom_hover.asp*/
+        .geeks {
+            width: auto;
+            height: auto;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+      
+        .geeks img {
+            width: 100%;
+            transition: 0.2s all ease-in-out;
+        }
+      
+        .geeks:hover img {
+            transform: scale(1.1);
+        }
