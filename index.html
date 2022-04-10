@@ -86,10 +86,15 @@
 	</script>
 
 
+	<script>
+	// inicializacion de los tooltip
+		$(document).ready(function(){
+		  $('[data-toggle="tooltip"]').tooltip();
+		});
+	</script>
+
 </head>
 <body>
-
-
 
 
 
@@ -115,7 +120,6 @@
 	</section>
 
 
-
 	<section class="section seccion-general">
 		<div class="container">
 			<h2 class="section-title text-center">General</h2>
@@ -133,9 +137,9 @@
 			      </div>
 
 			      <div class="card-body">
-			        <h5 class="card-title" title="En desuso!">
+			        <h5 class="card-title" >
 			        	Foros Fiuba
-			        	<svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+			        	<svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:" data-toggle="tooltip" title="¡En desuso!" data-placement="top"><use xlink:href="#exclamation-triangle-fill"/></svg>
 			     		</h5>
 			        <p class="card-text">Foro general sobre discusión, materias y carreras de la fiuba</p>
 			        <!-- <a href="http://www.foros-fiuba.com.ar/" class="stretched-link" target="_blank"></a> -->
@@ -145,9 +149,6 @@
 
 			</div>
 	</section>
-
-
-
 
 
 
@@ -237,18 +238,22 @@
 			</div>
 	</section>
 
-
-
 </div>
+
+
+
+
+
+
 
 </body>
 
 
 <footer>
   <div id="abajo">			
-    	<a href="https://github.com/AlePaff/alepaff.github.io" target="_blank" style="padding-left:10px;"><img src="https://github.githubassets.com/favicons/favicon.svg" class="invert_effect" alt="github" height="32" width="32" title="Ir al repositorio"></a>
+    	<a href="https://github.com/AlePaff/alepaff.github.io" target="_blank" style="padding-left:10px;"><img src="https://github.githubassets.com/favicons/favicon.svg" class="invert_effect" alt="github" height="32" width="32" title="Ir al repositorio" data-toggle="tooltip" data-placement="top"></a>
 
-    	<a href="https://docs.google.com/forms/d/e/1FAIpQLSe9v8y4L8Dtek3y9u8d5uSiB5SK-P-3FUvo1nhOJIF-pD8j3A/viewform?embedded=true" target="_blank" style="padding-left:10px;"><img src="https://www.svgrepo.com/show/217145/forms-document.svg" alt="github" height="32" width="32" title="Añadir un nuevo proyecto"></a>
+    	<a href="https://docs.google.com/forms/d/e/1FAIpQLSe9v8y4L8Dtek3y9u8d5uSiB5SK-P-3FUvo1nhOJIF-pD8j3A/viewform?embedded=true" target="_blank" style="padding-left:10px;"><img src="https://www.svgrepo.com/show/217145/forms-document.svg" alt="github" height="32" width="32" title="Añadir un nuevo proyecto" data-toggle="tooltip" data-placement="top"></a>
 
     	<br>ultima actualización:
     	<script>document.write(fechaActualizacion);</script>
