@@ -1,4 +1,4 @@
-var fechaActualizacion = "04/04/2022";
+var fechaActualizacion = "10/04/2022";
 
 
 // inicializacion de los tooltip
@@ -8,15 +8,15 @@ $(document).ready(function(){
 
 
 
+
 // datos de cada proyecto
 function createCard(nombre, desc, link, linkImage) {
 	return `
 						  <div class="col">
 			    	<div class="card">
 						<a href=${link} target="_blank">
-						<div class="img-hover-zoom img-hover-zoom--xyz">
+						<div class="img-hover-zoom img-hover-zoom--xyz">						
 			      <img src=${linkImage} class="card-img-top" onerror="this.onerror=null; this.src='images/placeholder.png'"></a></div>
-
 			      <div class="card-body">
 			        <h5 class="card-title">${nombre}</h5>
 			        <p class="card-text">${desc}</p>
@@ -24,12 +24,9 @@ function createCard(nombre, desc, link, linkImage) {
 			      </div>
 			    </div>
 			  </div>`
-			 //            <div class="card-footer">
-    //   <small class="text-muted">Last updated 3 mins ago</small>
-    // </div> 
-			  ;
 		}
-		$(function(){
+
+$(function(){
 			// $('#card_').append($(createCard('preset_nombre', "descripcion", "link", "imagen")));
 
 			$('#card_fiuba_drive').append($(createCard('Fiuba Drive', 	"Drive creado para subir material de tu curso y encontrar el de otros", "https://sites.google.com/view/drive-fiuba/", "images/fiuba-drive.jpg")));
@@ -42,7 +39,7 @@ function createCard(nombre, desc, link, linkImage) {
 
 
 			$('#card_fiuba_opiniones_compu').append($(createCard('FIUBA Opiniones de Cursos', "Opiniones sobre materias del depto de computación", "https://fiuba-opiniones-de-curso.herokuapp.com/", "images/opiniones-fiuba.jpg")));
-			$('#card_dolly_fiuba').append($(createCard('Dolly Fiuba', "Encuestas sobre cada catedra y materia de la fiuba", "https://dollyfiuba.com/", "images/dolly.jpg")));
+			$('#card_dolly_fiuba').append($(createCard('Dolly Fiuba', "Encuestas de estudiantes sobre cada catedra y materia de la fiuba", "https://dollyfiuba.com/", "images/dolly.jpg")));
 
 
 			$('#card_fiuba_map').append($(createCard('Fiuba Map', "Diagrama interactivo de correlatividades de materias de cada carrera", "https://fede.dm/FIUBA-Map/", "images/fiuba-map.jpg")));
@@ -57,3 +54,5 @@ function createCard(nombre, desc, link, linkImage) {
 			$('#card_FIUBA_Noticias').append($(createCard('Fiuba Noticias', "Canal de telegram con noticias sobre la fiuba", "https://t.me/s/FIUBA_Noticias", "images/telegram-noticias.png")));
 
 });
+
+
