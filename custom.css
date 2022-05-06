@@ -24,16 +24,23 @@ footer{
 }
 
 /*colores de cada seccion*/
-.seccion-material-apuntes{background-color: #f9dfff;}
+.seccion-material-apuntes{background-color: #EEF6F4;}
 /*.seccion-material-apuntes{background-color: #f9dbd4;}*/
-.seccion-cursos-opiniones{background-color: #EBE3DD;}
-.seccion-general{background-color: #DBEFF6;}
-.seccion-organizacion{background-color: #f2f2f2;}
-.seccion-noticias{background-color: #83D0FD;}
-.seccion-grupos{background-color: #BFFBF5;}
-.seccion-varios{background-color: #B3FDCC;}
+.seccion-general{background-color: #EEFFEB;}
+.seccion-cursos-opiniones{background-color: #EEF6F4;}
+.seccion-organizacion{background-color: #E5FBFF;}
+.seccion-grupos{background-color: #EEFFEB;}
+.seccion-noticias{background-color: #E5FBFF;}
+.seccion-varios{background-color: #EEFFEB;}
 
-/*body{background-color: #B3FDCC;}*/
+body{
+	background-color: #FFFFFF;
+
+
+	/*background-color: #343838;*/
+	/*color: darkgray;*/
+}
+
 
 
 /*para que las imagenes queden todas del mismo tamaño*/
@@ -42,7 +49,12 @@ footer{
     height: 20vw;
     /*object-fit: scale-down;       https://developer.mozilla.org/es/docs/Web/CSS/object-fit*/
     object-fit: cover;
+
+    filter: blur(2px);
+  	-webkit-filter: blur(2px);
+
 }
+
 
 
 /*zoom al pasar el mouse por encima https://w3bits.com/css-image-hover-zoom/ */
@@ -61,7 +73,6 @@ footer{
 }
 
 
-
 /*invertir colores del icono de github*/
 .invert_effect {
   filter: invert(100%);
@@ -70,8 +81,8 @@ footer{
 
 /*https://www.w3schools.com/howto/howto_css_transition_hover.asp*/
 .card-varios-transition:hover {
-	background-color: #f4511e;
-    color: white;
+	background-color: #EEF6F4;
+    /*color: white;*/
     opacity: 0.6;
 	transition: 0.2s;
 }
