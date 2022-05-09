@@ -1,4 +1,4 @@
-var fechaActualizacion = "10/04/2022";
+var fechaActualizacion = "09/05/2022";
 
 
 // inicializacion de los tooltip
@@ -33,7 +33,8 @@ $(function(){
 			$('#card_wiki_fiuba').append($(createCard('Wiki Fiuba', 	"Espacio colaborativo donde podés encontrar materiales de estudio para la carrera", "http://wiki.foros-fiuba.com.ar/", "images/wiki-fiuba.jpg")));
 			$('#card_sk_fiuba').append($(createCard('SK FIUBA',	 		"Guias, examenes y apuntes para las materias de ingeniería industrial", "https://sites.google.com/view/skfiuba/materias?authuser=0", "images/sk-fiuba.jpg")));
 			$('#card_filadd').append($(createCard('Filadd', 			"Distintos recursos de varias materias de la fiuba", "https://filadd.com/resultados-aportes/uba/ingenieria-uba/probabilidad-y-estadistica-a/51/2349", "images/filadd.jpg")));
-
+			$('#card_js_apuntes').append($(createCard('JS Apuntes', 	"Material dividido por carpetas descargables para materias de ingeniería industrial", "https://sites.google.com/view/site-js-apuntes", "images/js-apuntes.jpg")));
+			$('#card_fiuba_repos').append($(createCard('JS Apuntes', 	"Colección de repositorios con material de cursadas de materias, principalmente informática", "https://fede.dm/FIUBA-Repos/", "images/fiuba-repos.jpg")));
 
 			$('#card_fiuba_consultas').append($(createCard('Fiuba Consultas', "Grupo general sobre consultas, temas administrativos, noticias, polemica y memes", "https://www.facebook.com/groups/fiubaconsultas2", "images/fiuba-consultas.jpg")));
 
@@ -47,7 +48,7 @@ $(function(){
 
 
 			$('#card_grupos_fiuba').append($(createCard('Grupos fiuba', "Grupos de whatsapp de algunas materias", "https://linktr.ee/grupos_fiuba", "images/grupos-fiuba.png")));
-			$('#card_fiubaverse').append($(createCard('Fiuba Verse', "Todo tipo de grupos de telegram, noticias", "https://fiubaverse.github.io/", "images/fiubaverse.png")));
+			$('#card_fiubaverse').append($(createCard('Fiuba Verse', "Todo tipo de grupos de telegram de materias, noticias y ocio", "https://fiubaverse.github.io/", "images/fiubaverse.png")));
 
 
 			$('#card_mli_fiuba').append($(createCard('MLI fiuba', "Instagram del MLI sobre noticias y novedades de la fiuba", "https://www.instagram.com/mli.fiuba/?hl=es-la", "images/mli.fiuba.png")));
