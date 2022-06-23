@@ -1,4 +1,4 @@
-var fechaActualizacion = "09/05/2022";
+var fechaActualizacion = "23/06/2022";
 
 
 // inicializacion de los tooltip
