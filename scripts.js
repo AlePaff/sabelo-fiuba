@@ -1,4 +1,4 @@
-var fechaActualizacion = "23/06/2022";
+var fechaActualizacion = "29/06/2022";
 
 
 // inicializacion de los tooltip
@@ -34,7 +34,9 @@ $(function(){
 			$('#card_sk_fiuba').append($(createCard('SK FIUBA',	 		"Guias, examenes y apuntes para las materias de ingeniería industrial", "https://sites.google.com/view/skfiuba/materias?authuser=0", "images/sk-fiuba.jpg")));
 			$('#card_filadd').append($(createCard('Filadd', 			"Distintos recursos de varias materias de la fiuba", "https://filadd.com/resultados-aportes/uba/ingenieria-uba/probabilidad-y-estadistica-a/51/2349", "images/filadd.jpg")));
 			$('#card_js_apuntes').append($(createCard('JS Apuntes', 	"Material dividido por carpetas descargables para materias de ingeniería industrial", "https://sites.google.com/view/site-js-apuntes", "images/js-apuntes.jpg")));
-			$('#card_fiuba_repos').append($(createCard('JS Apuntes', 	"Colección de repositorios con material de cursadas de materias, principalmente informática", "https://fede.dm/FIUBA-Repos/", "images/fiuba-repos.jpg")));
+			$('#card_fiuba_repos').append($(createCard('Fiuba Repos', 	"Colección de repositorios con material de cursadas de materias, principalmente informática", "https://fede.dm/FIUBA-Repos/", "images/fiuba-repos.jpg")));
+			$('#card_kiwipedia').append($(createCard('Kiwipedia', 		"Material dividido por deptos y materias para ingeniería industrial", "https://fiubaar.sharepoint.com/sites/kiwipedia/SitePages/Kiwipedia.aspx", "images/kiwipedia.jpg")));
+
 
 			$('#card_fiuba_consultas').append($(createCard('Fiuba Consultas', "Grupo general sobre consultas, temas administrativos, noticias, polemica y memes", "https://www.facebook.com/groups/fiubaconsultas2", "images/fiuba-consultas.jpg")));
 
