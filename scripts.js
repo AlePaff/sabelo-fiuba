@@ -1,4 +1,4 @@
-var fechaActualizacion = "12/08/2022";
+var fechaActualizacion = "26/08/2022";
 
 // inicializacion de los tooltip
 $(document).ready(function(){
@@ -19,7 +19,12 @@ async function leerDatos(){
    const elementosID = elementosID1.concat(elementosID2, elementosID3, elementosID4);
    
    for(let i=0; i < elementosID.length; i++){
-		document.getElementById(elementosID[i]).innerHTML = createCard(datos[i].nombre, datos[i].desc, datos[i].link, datos[i].imagen, datos[i].observacion);
+	document.getElementById(elementosID[i]).innerHTML = createCard(datos[i].nombre, datos[i].desc, datos[i].link, datos[i].imagen, datos[i].observacion);
+   }
+
+	var elementosIDVarios = ["card_catalogo_fiuba", "card_libreria", "card_videos_youtube"];
+   for(let i=0; i < elementosIDVarios.length; i++){
+	document.getElementById(elementosIDVarios[i]).innerHTML = cartasVarios(datos[i].nombre, datos[i].desc, datos[i].link);
    }
 }
 
