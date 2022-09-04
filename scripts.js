@@ -22,9 +22,10 @@ async function leerDatos(){
 	document.getElementById(elementosID[i]).innerHTML = createCard(datos[i].nombre, datos[i].desc, datos[i].link, datos[i].imagen, datos[i].observacion);
    }
 
-	var elementosIDVarios = ["card_catalogo_fiuba", "card_libreria", "card_videos_youtube"];
+   var elementosIDVarios = ["card_catalogo_fiuba", "card_libreria", "card_videos_youtube"];
+   var longTot = elementosID.length
    for(let i=0; i < elementosIDVarios.length; i++){
-	document.getElementById(elementosIDVarios[i]).innerHTML = cartasVarios(datos[i].nombre, datos[i].desc, datos[i].link);
+	document.getElementById(elementosIDVarios[longTot+i]).innerHTML = cartasVarios(datos[longTot+i].nombre, datos[longTot+i].desc, datos[longTot+i].link);
    }
 }
 
