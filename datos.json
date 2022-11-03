@@ -35,7 +35,7 @@
    "link": "https://filadd.com/resultados-aportes/uba/ingenieria-uba/probabilidad-y-estadistica-a/51/2349",
    "imagen": "images/filadd.jpg",
    "categoria": "Material_y_apuntes",
-   "observacion": "",
+   "observacion": "Requiere login",
    "Captura de imagen": "",
    "Visitas (inicialmente privado)": ""
  },
@@ -65,7 +65,7 @@
    "link": "https://fiubaar.sharepoint.com/sites/kiwipedia/SitePages/Kiwipedia.aspx",
    "imagen": "images/kiwipedia.jpg",
    "categoria": "Material_y_apuntes",
-   "observacion": "",
+   "observacion": "Requiere login",
    "Captura de imagen": "",
    "Visitas (inicialmente privado)": ""
  },
@@ -208,5 +208,15 @@
    "observacion": "",
    "Captura de imagen": "",
    "Visitas (inicialmente privado)": ""
- }
+ }, 
+ {
+  "nombre": "Twitch computacion fiuba",
+  "desc": "Directos en twitch de proyectos, charlas, novedades y discusiones de la carrera",
+  "link": "https://www.twitch.tv/computacion_fiuba",
+  "imagen": "",
+  "categoria": "Varios",
+  "observacion": "",
+  "Captura de imagen": "",
+  "Visitas (inicialmente privado)": ""
+}
 ]
