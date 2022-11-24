@@ -1,33 +1,33 @@
-var fechaActualizacion = "02/11/2022";
+var fechaActualizacion = "24/11/2022";
 
 // inicializacion de los tooltip
-$(document).ready(function(){
-	$('[data-toggle="tooltip"]').tooltip();
+$(document).ready(function () {
+	$('[data-toggle="tooltip"]').tooltip();		//data-toggle es el atributo que se le agrega al elemento que se quiere que tenga tooltip
 });
 
 
+let json = {};
 
-leerDatos();
-async function leerDatos(){
-   const response = await fetch("datos.json");
-   const datos = await response.json();
+$.getJSON("datos.json", function (datos) {
+	json = datos;
 
-   var elementosID1 = ["card_wiki_fiuba", "card_fiuba_drive", "card_sk_fiuba", "card_filadd", "card_js_apuntes", "card_fiuba_repos", "card_kiwipedia", "card_diq_fiuba"];
-   var elementosID2 = ["card_fiuba_consultas", "card_foros_fiuba"];
-   var elementosID3 = ["card_dolly_fiuba", "card_fiuba_opiniones_compu"];
-   var elementosID4 = ["card_fiuba_map", "card_fiuba_plan", "card_grupos_fiuba", "card_fiubaverse", "card_mli_fiuba", "card_FIUBA_Noticias"];
-   const elementosID = elementosID1.concat(elementosID2, elementosID3, elementosID4);
-   
-   for(let i=0; i < elementosID.length; i++){
-	document.getElementById(elementosID[i]).innerHTML = createCard(datos[i].nombre, datos[i].desc, datos[i].link, datos[i].imagen, datos[i].observacion);
-   }
+	//TODO: eliminar cosas hardcodeadas
+	var elementosID1 = ["card_wiki_fiuba", "card_fiuba_drive", "card_sk_fiuba", "card_filadd", "card_js_apuntes", "card_fiuba_repos", "card_kiwipedia", "card_diq_fiuba"];
+	var elementosID2 = ["card_fiuba_consultas", "card_foros_fiuba"];
+	var elementosID3 = ["card_dolly_fiuba", "card_fiuba_opiniones_compu"];
+	var elementosID4 = ["card_fiuba_map", "card_fiuba_plan", "card_grupos_fiuba", "card_fiubaverse", "card_mli_fiuba", "card_FIUBA_Noticias"];
+	const elementosID = elementosID1.concat(elementosID2, elementosID3, elementosID4);
 
-   var elementosIDVarios = ["card_catalogo_fiuba", "card_libreria", "card_videos_youtube", "card_twitch_depto_compu"];
-   var longTot = elementosID.length
-   for(let i=0; i < elementosIDVarios.length; i++){
-	document.getElementById(elementosIDVarios[i]).innerHTML = cartasVarios(datos[longTot+i].nombre, datos[longTot+i].desc, datos[longTot+i].link);
-   }
-}
+	for (let i = 0; i < elementosID.length; i++) {
+		document.getElementById(elementosID[i]).innerHTML = createCard(datos[i].nombre, datos[i].desc, datos[i].link, datos[i].imagen, datos[i].observacion);
+	}
+
+	var elementosIDVarios = ["card_catalogo_fiuba", "card_libreria", "card_videos_youtube", "card_twitch_depto_compu"];
+	var longTot = elementosID.length
+	for (let i = 0; i < elementosIDVarios.length; i++) {
+		document.getElementById(elementosIDVarios[i]).innerHTML = cartasVarios(datos[longTot + i].nombre, datos[longTot + i].desc, datos[longTot + i].link);
+	}
+});
 
 
 
@@ -49,9 +49,9 @@ function createCard(nombre, desc, link, linkImage, observacion) {
 	</div>
 	</div>
 	`;
-	
-	if (observacion){
-		return card_start + `<svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:" data-toggle="tooltip" title=${observacion} data-placement="top"><use xlink:href="#exclamation-triangle-fill"/></svg>` + card_end;
+
+	if (observacion) {
+		return card_start + `<svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:" data-toggle="tooltip" title="${observacion}" data-placement="top"><use xlink:href="#exclamation-triangle-fill"/></svg>` + card_end;
 	};
 	return card_start + card_end;
 }
