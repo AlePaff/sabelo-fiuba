@@ -1,5 +1,4 @@
 import React from "react"
-import "./../styles.css"
 // import COLORES from "./theme.js"
 
 function Section(props) {
@@ -8,7 +7,7 @@ function Section(props) {
                 <h2>{props.titulo}</h2>
                 <p>{props.desc}</p>
                 <div>lista de cartas</div>
-                <p>{props.footerDesc}</p>
+                <p className="alig-izq">{props.footerDesc}</p>
         </div>
     )
 }

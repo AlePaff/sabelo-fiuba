@@ -12,6 +12,10 @@
     text-align: center;
 }
 
+.alig-izq{
+	text-align: left;
+}
+
 footer{
 	/*Tal vez un color gradiente https://cssgradient.io/*/
 	padding: 20px;
@@ -61,7 +65,7 @@ body{
 /*zoom al pasar el mouse por encima https://w3bits.com/css-image-hover-zoom/ */
 /* [1] The container */
 .img-hover-zoom {
-  height: 300px; /* [1.1] Set it as per your need */
+  /* height: 300px; [1.1] Set it as per your need */
   overflow: hidden; /* [1.2] Hide the overflowing of child elements */
 }
 /* [2] Transition property for smooth transformation of images */
