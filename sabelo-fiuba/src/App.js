@@ -1,6 +1,9 @@
 import './App.css';
 import Section from './components/Section.js'
 import CardSabelo from './components/Card.js'
+import SectionList from './components/SectionList.js'
+import CardVarios from './components/CardVarios.js'
+import Footer from './components/Footer.js'
 import "./styles.css"       //se usará para cada componente tambien
 import { ChakraProvider } from '@chakra-ui/react'
 // import Data from './datos.json'
@@ -15,34 +18,34 @@ const categoriasAll = {
     "desc": "Para paginas que engloban muchas materias",
     "footerDesc": "Tener en cuenta que varias materias son compartidas entre carreras, asi algo de civil puede servir para mecánica o informática"
   },
-  "general":{
+  "general": {
     "titulo": "General",
   },
-  "cursos_y_opiniones":{
+  "cursos_y_opiniones": {
     "titulo": "Cursos y Opiniones",
   },
-  "organizativo":{
+  "organizativo": {
     "titulo": "Organizativo",
   },
-  "grupos":{
+  "grupos": {
     "titulo": "Grupos",
   },
-  "noticias":{
+  "noticias": {
     "titulo": "Noticias",
   },
-  "varios":{
+  "varios": {
     "titulo": "Varios",
   }
 };
 
 const bgColorCategorias = {
   "material_y_apuntes": "seccion-material-apuntes",
-  "general":"seccion-general",
-  "cursos_y_opiniones":"seccion-cursos-opiniones",
-  "organizativo":"seccion-organizacion",
-  "grupos":"seccion-grupos",
-  "noticias":"seccion-noticias",
-  "varios":"seccion-varios"
+  "general": "seccion-general",
+  "cursos_y_opiniones": "seccion-cursos-opiniones",
+  "organizativo": "seccion-organizacion",
+  "grupos": "seccion-grupos",
+  "noticias": "seccion-noticias",
+  "varios": "seccion-varios"
 }
 
 
@@ -75,7 +78,7 @@ function App() {
         {categoriasUnicas.map(categoria => {
           return (
             <Section bgColor={bgColorCategorias[categoria] + " section"} titulo={categoriasAll[categoria].titulo} desc={categoriasAll[categoria].desc} footerDesc={categoriasAll[categoria].footerDesc}>
-              
+
               {/* Solo muestra los datos que pertenecen a la categoria */}
               {data.filter(dato => dato.categoria === categoria).map(dato => {
                 return (
@@ -92,67 +95,28 @@ function App() {
             </Section>
           )
         })}
-        
-        {/* <CardSabelo/> */}
-
-        {/* <Section bgColor={"seccion-material-apuntes section"} titulo="Material y apuntes" desc="Para paginas que engloban muchas materias" footerDesc="Tener en cuenta que varias materias son compartidas entre carreras, asi algo de civil puede servir para mecánica o informática">
-        </Section> */}
 
 
-        {data.map(datos => {
-          return (
-            <>              
-              <CardSabelo
-                nombre={datos.nombre}
-                desc={datos.desc}
-                link={datos.link}
-                imagen={datos.nombre}
-                categoria={datos.categoria}
-                observacion={datos.observacion}
+        {/* Seccion Varios */}
+        <SectionList bgColor={bgColorCategorias["varios"] + " section"} titulo={categoriasAll["varios"].titulo} desc={categoriasAll["varios"].desc} footerDesc={categoriasAll["varios"].footerDesc}>
+          {data.filter(dato => dato.categoria === "varios").map(dato => {
+            return (
+              <CardVarios
+                nombre={dato.nombre}
+                desc={dato.desc}
+                link={dato.link}
+                categoria={dato.categoria}
+                observacion={dato.observacion}
               />
-            </>
-          )
-        })}
-
-        <Section bgColor={"seccion-material-apuntes section"} titulo="Material y apuntes" desc="Para paginas que engloban muchas materias" footerDesc="Tener en cuenta que varias materias son compartidas entre carreras, asi algo de civil puede servir para mecánica o informática">
-
-
-          <CardSabelo />
-          <CardSabelo />
-          <CardSabelo />
-          <CardSabelo />
-          <CardSabelo />
-
-        </Section>
-
-
-        <Section bgColor={"section seccion-noticias"} titulo="Material y apuntes" desc="Para paginas que engloban muchas materias" footerDesc="Tener en cuenta que varias materias son compartidas entre carreras, asi algo de civil puede servir para mecánica o informática">
-
-
-          <CardSabelo />
-          <CardSabelo />
-          <CardSabelo />
-          <CardSabelo />
-          <CardSabelo />
-
-        </Section>
-        {/* <CardSabelo></CardSabelo> */}
-
-
-
-
-        {/* <Section estilos={"section seccion-material-apuntes"} titulo="Material y apuntes" desc="Para paginas que engloban muchas materias" footerDesc="Tener en cuenta que varias materias son compartidas entre carreras, asi algo de civil puede servir para mecánica o informática" /> */}
-
-        {/* alternativas para pasar estilos
-      Usando clases
-      <MyComponent className={ condition ? 'Class1' : 'Class2' } />
-      Usando estilos
-      <MyComponent style={ condition ? styleObj1 : styleObj2 } />
- */}
+            )
+          })}
+        </SectionList>
 
       </div>
 
-
+      <Footer>
+        <p>Hecho con amor por Ale</p>
+      </Footer>
 
     </ChakraProvider>
   );

@@ -32,8 +32,3 @@ function Section(props) {
 }
 
 export default Section;
-
-// titulo
-// descripcion
-// contenido
-// footer
