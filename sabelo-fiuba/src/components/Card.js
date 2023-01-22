@@ -4,27 +4,37 @@ import { WarningTwoIcon } from '@chakra-ui/icons'
 
 function CardSabelo(props) {
     return (
-        <Card maxW='sm'>
+        // <Card maxWidth='1000px' w='100%' overflow='hidden' alignSelf="stretch" direction="row">
+        <Card w='100%'>
             <CardBody>
                 <div className='img-hover-zoom img-hover-zoom--xyz'>
                     <Image
+                        maxWidth='100%'
                         src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'
-                        alt='Green double couch with wooden legs' />
+                        // src={props.imagen}
+                        alt={props.nombre}
+                        fallbackSrc= 'images/placeholder.png'
+                        fit='cover'
+                        overflow='hidden'
+                    />
+
                 </div>
-                <Stack mt='6' spacing='3'>
-
+                <Stack mt='5' spacing='3' textAlign='left'>
                     <Flex gap='2'>
-                        <Heading size='md'>Living room Sofa</Heading>
+                        <Heading size='md'>{props.nombre}</Heading>
 
-                        <Tooltip label='Phone number' fontSize='md' >
-                            <WarningTwoIcon w={6} h={6} color="red.500" />
-                        </Tooltip>
+                        {/* si la prop observacion existe entonces crear un tooltip */}
+                        {props.observacion && (
+                            <Tooltip label={props.observacion} fontSize='md' >
+                                <WarningTwoIcon w={6} h={6} color="red.500" />
+                            </Tooltip>
+                        )}
+
+
                     </Flex>
 
                     <Text>
-                        This sofa is perfect for modern tropical spaces, baroque inspired
-                        spaces, earthy toned spaces and for people who love a chic design with a
-                        sprinkle of vintage design.
+                        {props.desc}
                     </Text>
                 </Stack>
             </CardBody>

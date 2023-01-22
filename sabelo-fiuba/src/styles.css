@@ -2,6 +2,10 @@
 #todas{
 	margin-bottom: 30px;
 	margin-top: 40px;
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
 }
 
 .section{
@@ -9,12 +13,9 @@
 	margin-top: 20px;
 	margin-right: 20px;
 	margin-left: 20px;
-    text-align: center;
+    text-align: center;	
 }
 
-.alig-izq{
-	text-align: left;
-}
 
 footer{
 	/*Tal vez un color gradiente https://cssgradient.io/*/
