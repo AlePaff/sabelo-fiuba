@@ -1,15 +1,12 @@
 import './App.css';
+import "./styles.css"       //se usará para cada componente tambien
 import Section from './components/Section.js'
-import CardSabelo from './components/Card.js'
+import CardSabelo from './components/CardSabelo.js'
 import SectionList from './components/SectionList.js'
 import CardVarios from './components/CardVarios.js'
 import Footer from './components/Footer.js'
-import "./styles.css"       //se usará para cada componente tambien
 import { ChakraProvider } from '@chakra-ui/react'
 // import Data from './datos.json'
-
-// const MATERIAL_Y_APUNTES = {
-// }
 
 
 const categoriasAll = {
@@ -73,7 +70,7 @@ function App() {
     <ChakraProvider>
       <div id="todas">
 
-        {/* mapea cada dato del json y crea un componente CardSabelo de
+        {/* mapea cada dato del json y crea un componente CardSabelo y de
          acuerdo a la categoria a la que pertenece le crea una seccion */}
         {categoriasUnicas.map(categoria => {
           return (
@@ -86,7 +83,7 @@ function App() {
                     nombre={dato.nombre}
                     desc={dato.desc}
                     link={dato.link}
-                    imagen={dato.nombre}
+                    imagen={dato.imagen}
                     categoria={dato.categoria}
                     observacion={dato.observacion}
                   />
