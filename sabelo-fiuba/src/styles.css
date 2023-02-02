@@ -1,11 +1,14 @@
 /*margen general de la pagina*/
 #todas {
 	margin-bottom: 30px;
-	margin-top: 40px;
-	display: inline-flex;
+	margin-top: 40px;		
+
+	/* permite que al alejar quede centrado todo el contenido */
+	/* display: inline-flex;
 	flex-direction: column;
-	align-items: center;
 	width: 100%;
+	align-items: center; */
+	
 }
 
 .section {
