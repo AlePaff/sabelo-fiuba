@@ -1,5 +1,5 @@
 /*margen general de la pagina*/
-#todas{
+#todas {
 	margin-bottom: 30px;
 	margin-top: 40px;
 	display: inline-flex;
@@ -8,54 +8,105 @@
 	width: 100%;
 }
 
-.section{
+.section {
 	padding: 10px;
-	margin-top: 20px;
+	margin-top: 10px;
 	margin-right: 20px;
 	margin-left: 20px;
-    text-align: center;	
+	text-align: center;
+	border-radius: 10px;
 }
 
 
-footer{
+footer {
 	/*Tal vez un color gradiente https://cssgradient.io/*/
 	padding: 20px;
 	background-color: #1b2932;
 }
 
-#abajo{
-	color: white;		/*Color del texto*/
-	text-align:center;
+#abajo {
+	color: white;
+	/*Color del texto*/
+	text-align: center;
 	font-size: small;
 }
 
 /*colores de cada seccion*/
-.seccion-material-apuntes{background-color: #EEF6F4;}
-/*.seccion-material-apuntes{background-color: #f9dbd4;}*/
-.seccion-general{background-color: #EEFFEB;}
-.seccion-cursos-opiniones{background-color: #EEF6F4;}
-.seccion-organizacion{background-color: #E5FBFF;}
-.seccion-grupos{background-color: #EEFFEB;}
-.seccion-noticias{background-color: #E5FBFF;}
-.seccion-varios{background-color: #EEFFEB;}
+.seccion-material-apuntes {
+	background-color: #EEF6F4;
+}
 
-body{
+/*.seccion-material-apuntes{background-color: #f9dbd4;}*/
+.seccion-general {
+	background-color: #EEFFEB;
+}
+
+.seccion-cursos-opiniones {
+	background-color: #EEF6F4;
+}
+
+.seccion-organizacion {
+	background-color: #E5FBFF;
+}
+
+.seccion-grupos {
+	background-color: #EEFFEB;
+}
+
+.seccion-noticias {
+	background-color: #E5FBFF;
+}
+
+.seccion-varios {
+	background-color: #EEFFEB;
+}
+
+body {
 	/* background-color: #FFFFFF; */
 
 	background-color: #343838;
 	/* color: darkgray; */
 }
 
+.display-cards-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1rem;
+	justify-content: stretch;
+	align-items: stretch;
+}
+
+/* "display": "grid",
+// "gridTemplateColumns": "repeat(auto-fill, minmax(2fr, 100px))",
+"gridTemplateColumns": "1fr 1fr",
+"gridGap": "1rem",
+"justifyContent": "stretch",
+"alignItems": "stretch" */
+
+
+/* display: 'flex', flexDirection: 'column', alignItems: 'left', justifyContent: 'center', maxWidth: '1800px'} */
+.display-cards-column {
+	display: block;
+	/* display: flex; */
+	/* flex-direction: column; */
+	/* justify-content: stretch;
+	align-items: stretch; */
+
+
+	/* justify-content: left;
+	align-items: left; */
+	max-width: 1800px;
+}
 
 
 /*para que las imagenes queden todas del mismo tamaño*/
 .card-img-top {
-    width: 100%;
-    height: 20vw;
-    /*object-fit: scale-down;       https://developer.mozilla.org/es/docs/Web/CSS/object-fit*/
-    object-fit: cover;
+	width: 100%;
+	height: 20vw;
+	/*object-fit: scale-down;       https://developer.mozilla.org/es/docs/Web/CSS/object-fit*/
+	object-fit: cover;
 
-/*
+	/*
     filter: blur(2px);
   	-webkit-filter: blur(2px);*/
 
@@ -66,29 +117,24 @@ body{
 /*zoom al pasar el mouse por encima https://w3bits.com/css-image-hover-zoom/ */
 /* [1] The container */
 .img-hover-zoom {
-  /* height: 300px; [1.1] Set it as per your need */
-  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+	/* [1.1] Set it as per your need */
+	height: 300px;
+	overflow: hidden;
+	/* [1.2] Hide the overflowing of child elements */
 }
+
 /* [2] Transition property for smooth transformation of images */
 .img-hover-zoom img {
-  transition: transform .2s ease;
+	transition: transform .2s ease;
 }
+
 /* [3] Finally, transforming the image when container gets hovered */
 .img-hover-zoom:hover img {
-  transform: scale(1.05);
+	transform: scale(1.05);
 }
 
 
 /*invertir colores del icono de github*/
 .invert_effect {
-  filter: invert(100%);
-}
-
-
-/*https://www.w3schools.com/howto/howto_css_transition_hover.asp*/
-.card-varios-transition:hover {
-	background-color: #7394B5;
-    color: white;
-    opacity: 0.6;
-		transition: 0.2s;
+	filter: invert(100%);
 }

@@ -9,24 +9,15 @@ function Section(props) {
     return (
 
         <div className={props.bgColor} style={{ maxWidth: '1800px' }}>
-            <Heading>
-                {props.titulo}
-            </Heading>
+            <Heading >{props.titulo}</Heading>
+            <Text marginBottom={4}> {props.desc}</Text>
 
-            <Text>{props.desc}</Text>
-            <div style={{
-                "display": "grid",
-                // "gridTemplateColumns": "1fr 1fr",
-                // "gridTemplateColumns": "repeat(auto-fill, minmax(2fr, 100px))",
-                "gridTemplateColumns": "1fr 1fr",
-                "gridGap": "1rem",
-                "justifyContent": "stretch",
-                "alignItems": "stretch"
-
-            }}>
+            {/* se le pasa un estilo por parametro, si es display grid o por columnas */}
+            <div className={props.display}>
                 {props.children}
             </div>
-            <Text textAlign='left'>{props.footerDesc}</Text>
+
+            <Text textAlign='left' marginTop={4}>{props.footerDesc}</Text>
         </div>
     )
 }
