@@ -18,7 +18,7 @@ function Footer() {
         //transformar displayData en un formato de fecha
         let dateLastCommit = new Date(responseData.commit.commit.author.date)
         let day = dateLastCommit.getDate();
-        let month = dateLastCommit.getMonth();
+        let month = dateLastCommit.getMonth() + 1;      //getMonth() devuelve un valor entre 0 y 11
         let year = dateLastCommit.getFullYear();
         let formato = day + "/" + month + "/" + year;
         displayData = formato
