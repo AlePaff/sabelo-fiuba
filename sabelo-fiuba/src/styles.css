@@ -4,7 +4,7 @@
 	margin-top: 40px;		
 
 	/* permite que al alejar quede centrado todo el contenido */
-	/* display: inline-flex;
+	/* display: flex;
 	flex-direction: column;
 	width: 100%;
 	align-items: center; */
@@ -89,17 +89,22 @@ body {
 
 /* display: 'flex', flexDirection: 'column', alignItems: 'left', justifyContent: 'center', maxWidth: '1800px'} */
 .display-cards-column {
-	display: block;
-	/* display: flex; */
-	/* flex-direction: column; */
-	/* justify-content: stretch;
+	display: flex;
+	flex-direction: column;
+	/* display: grid;
+	flex-direction: column;
+	justify-content: stretch;
 	align-items: stretch; */
 
 
 	/* justify-content: left;
 	align-items: left; */
 	max-width: 1800px;
+	/* min-width: 100%; */
+	/* width: 100%; */
+	gap: 2px;
 }
+
 
 
 /*para que las imagenes queden todas del mismo tamaño*/
@@ -136,8 +141,3 @@ body {
 	transform: scale(1.05);
 }
 
-
-/*invertir colores del icono de github*/
-.invert_effect {
-	filter: invert(100%);
-}

@@ -110,9 +110,8 @@ function App() {
 
       </div>
 
-      <Footer>
-        <p>Hecho con amor por Ale</p>
-      </Footer>
+
+      <Footer></Footer>
 
     </ChakraProvider>
   );

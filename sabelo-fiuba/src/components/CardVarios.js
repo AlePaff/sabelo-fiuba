@@ -13,6 +13,8 @@ function CardVarios(props) {
                 // opacity: '0.6',
                 transition: '0.15s',
             }}
+            onClick={() => window.open(props.link, "_blank")}
+            cursor='pointer'
         >
             <CardBody>
                 <Stack spacing='4'>

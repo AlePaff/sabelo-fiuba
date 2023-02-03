@@ -17,6 +17,8 @@ function CardSabelo(props) {
                         fallbackSrc= {require('./../assets/images/placeholder.png')}
                         fit='cover'
                         overflow='hidden'
+                        cursor='pointer'        // cursor de mano cuando se pasa por encima
+                        onClick={() => window.open(props.link, "_blank")}
                     />
                     
                 </div>
