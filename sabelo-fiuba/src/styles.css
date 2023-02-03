@@ -35,34 +35,14 @@ footer {
 }
 
 /*colores de cada seccion*/
-.seccion-material-apuntes {
-	background-color: #EEF6F4;
-}
-
+.seccion-material-apuntes{background-color: #EEF6F4;}
 /*.seccion-material-apuntes{background-color: #f9dbd4;}*/
-.seccion-general {
-	background-color: #EEFFEB;
-}
-
-.seccion-cursos-opiniones {
-	background-color: #EEF6F4;
-}
-
-.seccion-organizacion {
-	background-color: #E5FBFF;
-}
-
-.seccion-grupos {
-	background-color: #EEFFEB;
-}
-
-.seccion-noticias {
-	background-color: #E5FBFF;
-}
-
-.seccion-varios {
-	background-color: #EEFFEB;
-}
+.seccion-general{background-color: #EEFFEB;}
+.seccion-cursos-opiniones{background-color: #EEF6F4;}
+.seccion-organizacion{background-color: #E5FBFF;}
+.seccion-grupos{background-color: #EEFFEB;}
+.seccion-noticias{background-color: #E5FBFF;}
+.seccion-varios{background-color: #EEFFEB;}
 
 body {
 	/* background-color: #FFFFFF; */
