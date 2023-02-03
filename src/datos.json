@@ -4,7 +4,7 @@
    "desc": "Espacio colaborativo donde podés encontrar materiales de estudio (examenes, guias, libros, etc) para cualquier carrera",
    "link": "http://wiki.foros-fiuba.com.ar/",
    "imagen": "images/wiki-fiuba.jpg",
-   "categoria": "Material_y_apuntes",
+   "categoria": "material_y_apuntes",
    "observacion": "",
    "Captura de imagen": "http://wiki.foros-fiuba.com.ar/materias:66:70",
    "Visitas (inicialmente privado)": ""
@@ -14,7 +14,7 @@
    "desc": "Drive creado para subir material de tu curso y encontrar el de otros",
    "link": "https://sites.google.com/view/drive-fiuba/",
    "imagen": "images/fiuba-drive.jpg",
-   "categoria": "Material_y_apuntes",
+   "categoria": "material_y_apuntes",
    "observacion": "",
    "Captura de imagen": "",
    "Visitas (inicialmente privado)": ""
@@ -24,7 +24,7 @@
    "desc": "Guias, examenes y apuntes para las materias de ingeniería industrial",
    "link": "https://sites.google.com/view/skfiuba/materias?authuser=0",
    "imagen": "images/sk-fiuba.jpg",
-   "categoria": "Material_y_apuntes",
+   "categoria": "material_y_apuntes",
    "observacion": "",
    "Captura de imagen": "https://sites.google.com/view/skfiuba/materias/%C3%A1lgebra-ii?authuser=0",
    "Visitas (inicialmente privado)": ""
@@ -34,7 +34,7 @@
    "desc": "Distintos recursos de varias materias de la fiuba",
    "link": "https://filadd.com/resultados-aportes/uba/ingenieria-uba/probabilidad-y-estadistica-a/51/2349",
    "imagen": "images/filadd.jpg",
-   "categoria": "Material_y_apuntes",
+   "categoria": "material_y_apuntes",
    "observacion": "Requiere login",
    "Captura de imagen": "",
    "Visitas (inicialmente privado)": ""
@@ -44,7 +44,7 @@
    "desc": "Material dividido por carpetas descargables para materias de ingeniería industrial",
    "link": "https://sites.google.com/view/site-js-apuntes",
    "imagen": "images/js-apuntes.jpg",
-   "categoria": "Material_y_apuntes",
+   "categoria": "material_y_apuntes",
    "observacion": "",
    "Captura de imagen": "",
    "Visitas (inicialmente privado)": ""
@@ -54,7 +54,7 @@
    "desc": "Colección de repositorios con material de cursadas de materias, principalmente informática",
    "link": "https://fede.dm/FIUBA-Repos/",
    "imagen": "images/fiuba-repos.jpg",
-   "categoria": "Material_y_apuntes",
+   "categoria": "material_y_apuntes",
    "observacion": "",
    "Captura de imagen": "",
    "Visitas (inicialmente privado)": ""
@@ -64,7 +64,7 @@
    "desc": "Material dividido por deptos y materias para ingeniería industrial",
    "link": "https://fiubaar.sharepoint.com/sites/kiwipedia/SitePages/Kiwipedia.aspx",
    "imagen": "images/kiwipedia.jpg",
-   "categoria": "Material_y_apuntes",
+   "categoria": "material_y_apuntes",
    "observacion": "Requiere login con la cuenta de Outlook",
    "Captura de imagen": "",
    "Visitas (inicialmente privado)": ""
@@ -74,7 +74,7 @@
    "desc": "Recolección de material pertinente a la carrera de Ingeniería Química",
    "link": "https://sites.google.com/view/diq-fiuba/p%C3%A1gina-principal?authuser=0",
    "imagen": "images/diq-fiuba.png",
-   "categoria": "Material_y_apuntes",
+   "categoria": "material_y_apuntes",
    "observacion": "",
    "Captura de imagen": "",
    "Visitas (inicialmente privado)": ""
@@ -84,7 +84,7 @@
    "desc": "Grupo general sobre consultas, temas administrativos, noticias, polemica y memes",
    "link": "https://www.facebook.com/groups/fiubaconsultas2",
    "imagen": "images/fiuba-consultas.jpg",
-   "categoria": "General",
+   "categoria": "general",
    "observacion": "",
    "Captura de imagen": "",
    "Visitas (inicialmente privado)": ""
@@ -94,7 +94,7 @@
    "desc": "Foro general sobre discusión, materias y carreras de la fiuba",
    "link": "http://www.foros-fiuba.com.ar/",
    "imagen": "images/foros-fiuba.jpg",
-   "categoria": "General",
+   "categoria": "general",
    "observacion": "En desuso",
    "Captura de imagen": "",
    "Visitas (inicialmente privado)": ""
@@ -104,7 +104,7 @@
    "desc": "Opiniones sobre materias del depto de computación",
    "link": "https://fiuba-opiniones-de-curso.herokuapp.com/",
    "imagen": "images/opiniones-fiuba.jpg",
-   "categoria": "Cursos_y_Opiniones",
+   "categoria": "cursos_y_opiniones",
    "observacion": "Ultima actualización 1c 2021",
    "Captura de imagen": "",
    "Visitas (inicialmente privado)": ""
@@ -114,7 +114,7 @@
    "desc": "Encuestas de estudiantes sobre cada catedra y materia de la fiuba",
    "link": "https://dollyfiuba.com/",
    "imagen": "images/dolly.jpg",
-   "categoria": "Cursos_y_Opiniones",
+   "categoria": "cursos_y_opiniones",
    "observacion": "",
    "Captura de imagen": "",
    "Visitas (inicialmente privado)": ""
@@ -124,7 +124,7 @@
    "desc": "Diagrama interactivo de correlatividades de materias de cada carrera",
    "link": "https://fede.dm/FIUBA-Map/",
    "imagen": "images/fiuba-map.jpg",
-   "categoria": "Organizativo",
+   "categoria": "organizativo",
    "observacion": "",
    "Captura de imagen": "",
    "Visitas (inicialmente privado)": ""
@@ -134,7 +134,7 @@
    "desc": "Organizador de horarios ",
    "link": "https://fede.dm/FIUBA-Plan/",
    "imagen": "images/fiuba-plan.jpg",
-   "categoria": "Organizativo",
+   "categoria": "organizativo",
    "observacion": "",
    "Captura de imagen": "",
    "Visitas (inicialmente privado)": ""
@@ -144,7 +144,7 @@
    "desc": "Todo tipo de grupos de telegram de materias, noticias y ocio",
    "link": "https://fiubaverse.github.io/",
    "imagen": "images/fiubaverse.png",
-   "categoria": "Grupos",
+   "categoria": "grupos",
    "observacion": "",
    "Captura de imagen": "",
    "Visitas (inicialmente privado)": ""
@@ -154,7 +154,7 @@
    "desc": "Grupos de whatsapp de algunas materias",
    "link": "https://linktr.ee/grupos_fiuba",
    "imagen": "images/grupos-fiuba.png",
-   "categoria": "Grupos",
+   "categoria": "grupos",
    "observacion": "",
    "Captura de imagen": "",
    "Visitas (inicialmente privado)": ""
@@ -164,7 +164,7 @@
    "desc": "Canal de telegram con noticias sobre la fiuba",
    "link": "https://t.me/s/FIUBA_Noticias",
    "imagen": "images/telegram-noticias.png",
-   "categoria": "Noticias",
+   "categoria": "noticias",
    "observacion": "",
    "Captura de imagen": "",
    "Visitas (inicialmente privado)": ""
@@ -174,7 +174,7 @@
    "desc": "Instagram del MLI sobre noticias y novedades de la fiuba",
    "link": "https://www.instagram.com/mli.fiuba/?hl=es-la",
    "imagen": "images/mli.fiuba.png",
-   "categoria": "Noticias",
+   "categoria": "noticias",
    "observacion": "",
    "Captura de imagen": "",
    "Visitas (inicialmente privado)": ""
@@ -184,7 +184,7 @@
    "desc": "Para buscar libros y ver si estan disponibles en la biblioteca (visitar su facebook para novedades)",
    "link": "http://catalogo.fi.uba.ar/",
    "imagen": "",
-   "categoria": "Varios",
+   "categoria": "varios",
    "observacion": "",
    "Captura de imagen": "",
    "Visitas (inicialmente privado)": ""
@@ -194,7 +194,7 @@
    "desc": "Lista de precios de la libreria de la sede de Paseo Colon",
    "link": "https://docs.google.com/spreadsheets/d/1-1hmf9SmvlTeDGO6C5ZgdDy1q4MhAAGt/",
    "imagen": "",
-   "categoria": "Varios",
+   "categoria": "varios",
    "observacion": "",
    "Captura de imagen": "",
    "Visitas (inicialmente privado)": ""
@@ -204,7 +204,7 @@
    "desc": "Videos sobre charlas, seminarios y congresos dados en fiuba y transmitidos por youtube",
    "link": "https://www.youtube.com/c/FIUBAoficial/videos",
    "imagen": "",
-   "categoria": "Varios",
+   "categoria": "varios",
    "observacion": "",
    "Captura de imagen": "",
    "Visitas (inicialmente privado)": ""
@@ -214,7 +214,7 @@
   "desc": "Directos en twitch de proyectos, charlas, novedades y discusiones de la carrera",
   "link": "https://www.twitch.tv/computacion_fiuba",
   "imagen": "",
-  "categoria": "Varios",
+  "categoria": "varios",
   "observacion": "",
   "Captura de imagen": "",
   "Visitas (inicialmente privado)": ""
