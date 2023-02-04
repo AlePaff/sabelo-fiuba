@@ -1,4 +1,14 @@
 import { Stack, Heading, Card, CardBody, Box, Text } from '@chakra-ui/react'
+import ReactGA from "react-ga4";
+
+const onClick = () => {
+    ReactGA.event({
+        category: "card_varios_category",
+        action: "click_card_varios",
+        label: "Card",
+        value: 1,
+    });
+};
 
 
 function CardVarios(props) {
@@ -13,7 +23,7 @@ function CardVarios(props) {
                 // opacity: '0.6',
                 transition: '0.15s',
             }}
-            onClick={() => window.open(props.link, "_blank")}
+            onClick={() => window.open(props.link, "_blank") && onClick()}
             cursor='pointer'
         >
             <CardBody>

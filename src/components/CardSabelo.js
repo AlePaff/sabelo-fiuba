@@ -1,7 +1,16 @@
 import { Image, Flex, Text } from '@chakra-ui/react'
 import { Stack, Heading, Card, Tooltip, CardBody } from '@chakra-ui/react'
 import { WarningTwoIcon } from '@chakra-ui/icons'
+import ReactGA from "react-ga4";
 
+const onClick = () => {
+    ReactGA.event({
+        category: "card_sabelo_category",
+        action: "click_card_sabelo",
+        label: "Card",
+        value: 1,
+    });
+};
 
 function CardSabelo(props) {
 
@@ -18,7 +27,8 @@ function CardSabelo(props) {
                         fit='cover'
                         overflow='hidden'
                         cursor='pointer'        // cursor de mano cuando se pasa por encima
-                        onClick={() => window.open(props.link, "_blank")}
+                        onClick={() => window.open(props.link, "_blank") && onClick()}
+                        //abre un nuevo enlace y ejecuta la funcion onClick (para google analytics)
                     />
                     
                 </div>
