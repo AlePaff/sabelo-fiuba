@@ -4,6 +4,8 @@ import { WarningTwoIcon } from '@chakra-ui/icons'
 import ReactGA from "react-ga4";
 import { useState, useEffect } from 'react'
 
+const mobile_size_pixel = 750;
+
 const onClick = () => {
     ReactGA.event({
         category: "card_sabelo_category",
@@ -16,7 +18,7 @@ const onClick = () => {
 
 
 function CardSabelo(props) {
-    const mobile_size_pixel = 750;
+    //detectar si se está en un dispositivo móvil
     const [width, setWidth] = useState(window.innerWidth);
     function handleWindowSizeChange() {
         setWidth(window.innerWidth);
@@ -33,7 +35,6 @@ function CardSabelo(props) {
 
 
     return (
-        // <CardInMobile mobile={isMobile} links={props.link}>
         <Card>
             <CardBody>
                 <div className='img-hover-zoom img-hover-zoom--xyz'>
@@ -54,7 +55,7 @@ function CardSabelo(props) {
                         {/* gap entre el icono de advertencia y el titulo */}
                         {
                             isMobile
-                                ? <Heading onClick={() => window.open(props.link, "_blank") && onClick()}>{props.nombre}</Heading>
+                                ? <Heading size='lg' onClick={() => window.open(props.link, "_blank") && onClick()}>{props.nombre}</Heading>
                                 : <Heading size='md'>{props.nombre}</Heading>
                         }
                         {props.observacion && (
@@ -64,9 +65,6 @@ function CardSabelo(props) {
                                 </button>
                             </Tooltip>
                         )}
-
-
-
                     </Flex>
 
                     <Text dangerouslySetInnerHTML={{ __html: props.desc }}>
@@ -75,7 +73,6 @@ function CardSabelo(props) {
 
                 </Stack>
             </CardBody>
-            {/* </CardInMobile> */}
         </Card>
     )
 }
