@@ -1,3 +1,7 @@
+
+
+
+
 /*margen general de la pagina*/
 #todas {
 	margin-bottom: 30px;
@@ -42,12 +46,7 @@
 	align-items: stretch;
 }
 
-/* "display": "grid",
-// "gridTemplateColumns": "repeat(auto-fill, minmax(2fr, 100px))",
-"gridTemplateColumns": "1fr 1fr",
-"gridGap": "1rem",
-"justifyContent": "stretch",
-"alignItems": "stretch" */
+
 
 
 /* display: 'flex', flexDirection: 'column', alignItems: 'left', justifyContent: 'center', maxWidth: '1800px'} */
@@ -62,7 +61,7 @@
 
 	/* justify-content: left;
 	align-items: left; */
-	max-width: 1800px;
+	max-width: 1600px;
 	/* min-width: 100%; */
 	/* width: 100%; */
 	gap: 2px;
@@ -73,7 +72,7 @@
 /* [1] The container */
 .img-hover-zoom {
 	/* [1.1] Set it as per your need */
-	height: 300px;
+	max-height: 300px;
 	overflow: hidden;
 	/* [1.2] Hide the overflowing of child elements */
 }
@@ -91,3 +90,32 @@
 	/* filter: blur(0px) */
 }
 
+
+.new-line{
+	white-space: pre-line;
+	vertical-align: bottom;
+}
+
+
+
+.links-in-text {
+	color: rgb(65, 163, 255);
+}
+.links-in-text:hover {
+	color: rgb(255, 65, 65);
+}
+
+
+
+
+/* cuando la pantalla es de un dispositivo movil */
+@media screen and (max-width: 750px) {
+	.display-cards-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.img-hover-zoom {
+		/* height: 100px; */
+		display: none;
+	}
+}
