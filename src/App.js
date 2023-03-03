@@ -45,9 +45,16 @@ const bgColorCategorias = {
 }
 
 
-
-
 function App() {
+
+  return (
+    <ChakraProvider>
+      <SabeloFiuba></SabeloFiuba>
+    </ChakraProvider>
+  );
+}
+
+function SabeloFiuba() {
   let data = require('./datos.json');
 
   // cada elemento del json tiene una categoría asociada
@@ -63,58 +70,54 @@ function App() {
     categoriasUnicas.splice(index, 1);
   }
 
-
-
   return (
-    <ChakraProvider>
-      <div id="todas">
+    <>
+    <div id="todas">
 
-        {/* mapea cada dato del json y crea un componente CardSabelo y de
+      {/* mapea cada dato del json y crea un componente CardSabelo y de
          acuerdo a la categoria a la que pertenece le crea una seccion */}
-        {categoriasUnicas.map(categoria => {
-          return (
-            <Section display={"display-cards-grid"} bgColor={bgColorCategorias[categoria] + " section"} titulo={categoriasAll[categoria].titulo} desc={categoriasAll[categoria].desc} footerDesc={categoriasAll[categoria].footerDesc}>
+      {categoriasUnicas.map(categoria => {
+        return (
+          <Section display={"display-cards-grid"} bgColor={bgColorCategorias[categoria] + " section"} titulo={categoriasAll[categoria].titulo} desc={categoriasAll[categoria].desc} footerDesc={categoriasAll[categoria].footerDesc}>
 
-              {/* Solo muestra los datos que pertenecen a la categoria */}
-              {data.filter(dato => dato.categoria === categoria).map(dato => {
-                return (
-                  <CardSabelo
-                    nombre={dato.nombre}
-                    desc={dato.desc}
-                    link={dato.link}
-                    imagen={dato.imagen}
-                    categoria={dato.categoria}
-                    observacion={dato.observacion}
-                  />
-                )
-              })}
-            </Section>
+            {/* Solo muestra los datos que pertenecen a la categoria */}
+            {data.filter(dato => dato.categoria === categoria).map(dato => {
+              return (
+                <CardSabelo
+                  nombre={dato.nombre}
+                  desc={dato.desc}
+                  link={dato.link}
+                  imagen={dato.imagen}
+                  categoria={dato.categoria}
+                  observacion={dato.observacion}
+                />
+              )
+            })}
+          </Section>
+        )
+      })}
+
+
+      {/* Seccion Varios */}
+      <Section display={"display-cards-column"} bgColor={bgColorCategorias["varios"] + " section"} titulo={categoriasAll["varios"].titulo} desc={categoriasAll["varios"].desc} footerDesc={categoriasAll["varios"].footerDesc}>
+        {data.filter(dato => dato.categoria === "varios").map(dato => {
+          return (
+            <CardVarios
+              nombre={dato.nombre}
+              desc={dato.desc}
+              link={dato.link}
+              categoria={dato.categoria}
+              observacion={dato.observacion}
+            />
           )
         })}
-
-
-        {/* Seccion Varios */}
-        <Section display={"display-cards-column"} bgColor={bgColorCategorias["varios"] + " section"} titulo={categoriasAll["varios"].titulo} desc={categoriasAll["varios"].desc} footerDesc={categoriasAll["varios"].footerDesc}>
-          {data.filter(dato => dato.categoria === "varios").map(dato => {
-            return (
-              <CardVarios
-                nombre={dato.nombre}
-                desc={dato.desc}
-                link={dato.link}
-                categoria={dato.categoria}
-                observacion={dato.observacion}
-              />
-            )
-          })}
-        </Section>
-
-      </div>
-
-
-      <Footer></Footer>
-
-    </ChakraProvider>
-  );
+      </Section>      
+    </div>
+    
+    <Footer></Footer> 
+    </>
+  )
 }
+
 
 export default App;

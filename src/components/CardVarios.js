@@ -13,7 +13,6 @@ const onClick = () => {
 
 function CardVarios({ nombre, desc, link, categoria, observacion }) {
     return (
-
         <Card
             w='100%'
             _hover={{
@@ -38,7 +37,6 @@ function CardVarios({ nombre, desc, link, categoria, observacion }) {
                     </Box>
                 </Stack>
             </CardBody>
-
         </Card>
     )
 }
