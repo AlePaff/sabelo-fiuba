@@ -11,7 +11,7 @@ const onClick = () => {
 };
 
 
-function CardVarios(props) {
+function CardVarios({ nombre, desc, link, categoria, observacion }) {
     return (
 
         <Card
@@ -23,17 +23,17 @@ function CardVarios(props) {
                 // opacity: '0.6',
                 transition: '0.15s',
             }}
-            onClick={() => window.open(props.link, "_blank") && onClick()}
+            onClick={() => window.open(link, "_blank") && onClick()}
             cursor='pointer'
         >
             <CardBody>
                 <Stack spacing='4'>
                     <Box textAlign={"left"}>
                         <Heading size='md'>
-                            {props.nombre}
+                            {nombre}
                         </Heading>
                         <Text>
-                            {props.desc}
+                            {desc}
                         </Text>
                     </Box>
                 </Stack>

@@ -17,7 +17,7 @@ const onClick = () => {
 
 
 
-function CardSabelo(props) {
+function CardSabelo({ nombre, desc, link, imagen, categoria, observacion }) {
     //detectar si se está en un dispositivo móvil
     const [width, setWidth] = useState(window.innerWidth);
     function handleWindowSizeChange() {
@@ -32,21 +32,19 @@ function CardSabelo(props) {
     }, []);
     const isMobile = width <= mobile_size_pixel;
 
-
-
     return (
         <Card>
             <CardBody>
                 <div className='img-hover-zoom img-hover-zoom--xyz'>
                     <Image
                         // maxWidth='100%'
-                        src={require('./../assets/' + props.imagen)}
-                        alt={props.nombre}
+                        src={require('./../assets/' + imagen)}
+                        alt={nombre}
                         fallbackSrc={require('./../assets/images/placeholder.png')}
                         fit='cover'
                         overflow='hidden'
                         cursor='pointer'        // cursor de mano cuando se pasa por encima
-                        onClick={() => window.open(props.link, "_blank") && onClick()}
+                        onClick={() => window.open(link, "_blank") && onClick()}
                     />
 
                 </div>
@@ -55,19 +53,19 @@ function CardSabelo(props) {
                         {/* gap entre el icono de advertencia y el titulo */}
                         {
                             isMobile
-                                ? <Heading size='lg' onClick={() => window.open(props.link, "_blank") && onClick()}>{props.nombre}</Heading>
-                                : <Heading size='md'>{props.nombre}</Heading>
+                                ? <Heading size='lg' onClick={() => window.open(link, "_blank") && onClick()}>{nombre}</Heading>
+                                : <Heading size='md'>{nombre}</Heading>
                         }
-                        {props.observacion && (
-                            <Tooltip label={props.observacion} fontSize='md' className='new-line'>
-                                <button style={{cursor: 'auto'}}>
+                        {observacion && (
+                            <Tooltip label={observacion} fontSize='md' className='new-line'>
+                                <button style={{ cursor: 'auto' }}>
                                     <WarningTwoIcon w={6} h={6} color="red.500" />
                                 </button>
                             </Tooltip>
                         )}
                     </Flex>
 
-                    <Text dangerouslySetInnerHTML={{ __html: props.desc }}>
+                    <Text dangerouslySetInnerHTML={{ __html: desc }}>
                     </Text>
 
 
