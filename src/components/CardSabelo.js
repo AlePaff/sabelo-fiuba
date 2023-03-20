@@ -19,6 +19,11 @@ const onClick = () => {
 
 
 function CardSabelo({ nombre, desc, link, imagen, categoria, observacion }) {
+    const PLACEHOLDER = "images/placeholder.png";
+
+    //si no existe la imagen, se usa el placeholder
+    imagen = (imagen === "") ? PLACEHOLDER : imagen
+
     //detectar si se está en un dispositivo móvil
     const [width, setWidth] = useState(window.innerWidth);
     function handleWindowSizeChange() {
@@ -40,7 +45,7 @@ function CardSabelo({ nombre, desc, link, imagen, categoria, observacion }) {
                     // maxWidth='100%'
                     src={require('./../assets/' + imagen)}
                     alt={nombre}
-                    fallbackSrc={require('./../assets/images/placeholder.png')}
+                    fallbackSrc={require('./../assets/' + PLACEHOLDER)}
                     fit='cover'
                     overflow='hidden'
                     cursor='pointer'        // cursor de mano cuando se pasa por encima
