@@ -218,5 +218,25 @@
     "observacion": "",
     "Captura de imagen": "",
     "Visitas (inicialmente privado)": ""
+  },
+  {
+    "nombre": "Fiuba Apuntes",
+    "desc": "Los apuntes de FIUBA, en formato digital. Hechos por y para todos. De aqui vienen los famosos apuntes de <a class=\"links-in-text\" href=\"https://web.archive.org/web/20200130183529/http://web.fi.uba.ar/~mparnisari/#!/\" target=\"_blank\">M. Parnisari</a>",
+    "link": "https://fiuba-apuntes.github.io",
+    "imagen": "",
+    "categoria": "material_y_apuntes",
+    "observacion": "Desactualizado",
+    "Captura de imagen": "",
+    "Visitas (inicialmente privado)": ""
+  },
+  {
+    "nombre": "Comunidad Fiuba",
+    "desc": "(BETA) Sitio para subir y buscar facilmente material de la fiuba (examenes, resumenes, etc)",
+    "link": "https://comunidad-fiuba.github.io/",
+    "imagen": "",
+    "categoria": "material_y_apuntes",
+    "observacion": "Nuevo, en versión Beta",
+    "Captura de imagen": "",
+    "Visitas (inicialmente privado)": ""
   }
 ]
