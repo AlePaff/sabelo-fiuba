@@ -19,7 +19,8 @@ const onClick = () => {
 
 
 function CardSabelo({ nombre, desc, link, imagen, categoria, observacion }) {
-    const PLACEHOLDER = "images/placeholder.png";
+    // const PLACEHOLDER = "images/placeholder.png";
+    const PLACEHOLDER = "https://i.imgur.com/g374iQx.png";
 
     //si no existe la imagen, se usa el placeholder
     imagen = (imagen === "") ? PLACEHOLDER : imagen
