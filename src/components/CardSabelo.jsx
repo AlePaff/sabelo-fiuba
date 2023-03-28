@@ -44,13 +44,23 @@ function CardSabelo({ nombre, desc, link, imagen, categoria, observacion }) {
             <div className='img-hover-zoom'>
                 <Image
                     // maxWidth='100%'
-                    src={'./src/assets/' + imagen}
+                    src={'./assets/' + imagen}
                     alt={nombre}
-                    fallbackSrc={'./src/assets/' + PLACEHOLDER}
+                    fallbackSrc={PLACEHOLDER}
+                    // fallbackSrc={'./assets/' + PLACEHOLDER}
                     fit='cover'
                     overflow='hidden'
                     cursor='pointer'        // cursor de mano cuando se pasa por encima
                     onClick={() => window.open(link, "_blank") && onClick()}
+                    //permitir middle click pero que me deje en la misma página y no me redirieja a la nueva
+                    onMouseDown={(e) => {
+                        if (e.button === 1) {
+                            e.preventDefault();
+                            window.open(link, "_blank, noopener,noreferrer");
+                            onClick();
+                        }
+
+                    }}
                 />
 
             </div>
