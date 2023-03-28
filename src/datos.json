@@ -6,7 +6,8 @@
     "imagen": "images/wiki-fiuba.png",
     "categoria": "material_y_apuntes",
     "observacion": "",
-    "Captura de imagen": "http://wiki.foros-fiuba.com.ar/materias:66:70",
+    "login_info": "",
+    "captura_imagen_link": "http://wiki.foros-fiuba.com.ar/materias:66:70",
     "Visitas (inicialmente privado)": ""
   },
   {
@@ -16,7 +17,8 @@
     "imagen": "images/fiuba-drive.jpg",
     "categoria": "material_y_apuntes",
     "observacion": "",
-    "Captura de imagen": "",
+    "login_info": "",
+    "captura_imagen_link": "",
     "Visitas (inicialmente privado)": ""
   },
   {
@@ -26,7 +28,8 @@
     "imagen": "images/sk-fiuba.jpg",
     "categoria": "material_y_apuntes",
     "observacion": "",
-    "Captura de imagen": "https://sites.google.com/view/skfiuba/materias/%C3%A1lgebra-ii?authuser=0",
+    "login_info": "",
+    "captura_imagen_link": "https://sites.google.com/view/skfiuba/materias/%C3%A1lgebra-ii?authuser=0",
     "Visitas (inicialmente privado)": ""
   },
   {
@@ -35,8 +38,9 @@
     "link": "https://filadd.com/resultados-aportes/uba/ingenieria-uba/probabilidad-y-estadistica-a/51/2349",
     "imagen": "images/filadd.jpg",
     "categoria": "material_y_apuntes",
-    "observacion": "Requiere login",
-    "Captura de imagen": "",
+    "observacion": "",
+    "login_info": "Requiere login",
+    "captura_imagen_link": "",
     "Visitas (inicialmente privado)": ""
   },
   {
@@ -46,7 +50,8 @@
     "imagen": "images/js-apuntes.jpg",
     "categoria": "material_y_apuntes",
     "observacion": "",
-    "Captura de imagen": "",
+    "login_info": "",
+    "captura_imagen_link": "",
     "Visitas (inicialmente privado)": ""
   },
   {
@@ -56,7 +61,8 @@
     "imagen": "images/fiuba-repos.jpg",
     "categoria": "material_y_apuntes",
     "observacion": "",
-    "Captura de imagen": "",
+    "login_info": "",
+    "captura_imagen_link": "",
     "Visitas (inicialmente privado)": ""
   },
   {
@@ -65,8 +71,9 @@
     "link": "https://fiubaar.sharepoint.com/sites/kiwipedia/SitePages/Kiwipedia.aspx",
     "imagen": "images/kiwipedia.jpg",
     "categoria": "material_y_apuntes",
-    "observacion": "Requiere login con la cuenta de Outlook",
-    "Captura de imagen": "",
+    "observacion": "",
+    "login_info": "Requiere login con cuenta de Outlook",
+    "captura_imagen_link": "",
     "Visitas (inicialmente privado)": ""
   },
   {
@@ -76,7 +83,8 @@
     "imagen": "images/diq-fiuba.png",
     "categoria": "material_y_apuntes",
     "observacion": "",
-    "Captura de imagen": "",
+    "login_info": "",
+    "captura_imagen_link": "",
     "Visitas (inicialmente privado)": ""
   },
   {
@@ -86,7 +94,8 @@
     "imagen": "images/fiuba-consultas.jpg",
     "categoria": "general",
     "observacion": "",
-    "Captura de imagen": "",
+    "login_info": "",
+    "captura_imagen_link": "",
     "Visitas (inicialmente privado)": ""
   },
   {
@@ -96,7 +105,8 @@
     "imagen": "images/foros-fiuba.jpg",
     "categoria": "general",
     "observacion": "En desuso",
-    "Captura de imagen": "",
+    "login_info": "",
+    "captura_imagen_link": "",
     "Visitas (inicialmente privado)": ""
   },
   {
@@ -106,7 +116,8 @@
     "imagen": "images/dolly.jpg",
     "categoria": "cursos_y_opiniones",
     "observacion": "",
-    "Captura de imagen": "",
+    "login_info": "",
+    "captura_imagen_link": "",
     "Visitas (inicialmente privado)": ""
   },
   {
@@ -116,7 +127,8 @@
     "imagen": "images/opiniones-fiuba.jpg",
     "categoria": "cursos_y_opiniones",
     "observacion": "Actualmente caido\nUltima actualización 1c 2021",
-    "Captura de imagen": "",
+    "login_info": "",
+    "captura_imagen_link": "",
     "Visitas (inicialmente privado)": ""
   },
   {
@@ -126,7 +138,8 @@
     "imagen": "images/fiuba-map.jpg",
     "categoria": "organizativo",
     "observacion": "",
-    "Captura de imagen": "",
+    "login_info": "",
+    "captura_imagen_link": "",
     "Visitas (inicialmente privado)": ""
   },
   {
@@ -136,7 +149,8 @@
     "imagen": "images/fiuba-plan.jpg",
     "categoria": "organizativo",
     "observacion": "",
-    "Captura de imagen": "",
+    "login_info": "",
+    "captura_imagen_link": "",
     "Visitas (inicialmente privado)": ""
   },
   {
@@ -146,7 +160,8 @@
     "imagen": "images/fiubaverse.png",
     "categoria": "grupos",
     "observacion": "",
-    "Captura de imagen": "",
+    "login_info": "",
+    "captura_imagen_link": "",
     "Visitas (inicialmente privado)": ""
   },
   {
@@ -156,7 +171,8 @@
     "imagen": "images/grupos-fiuba.png",
     "categoria": "grupos",
     "observacion": "",
-    "Captura de imagen": "",
+    "login_info": "",
+    "captura_imagen_link": "",
     "Visitas (inicialmente privado)": ""
   },
   {
@@ -166,7 +182,8 @@
     "imagen": "images/telegram-noticias.png",
     "categoria": "noticias",
     "observacion": "",
-    "Captura de imagen": "",
+    "login_info": "",
+    "captura_imagen_link": "",
     "Visitas (inicialmente privado)": ""
   },
   {
@@ -176,7 +193,8 @@
     "imagen": "images/mli.fiuba.png",
     "categoria": "noticias",
     "observacion": "",
-    "Captura de imagen": "",
+    "login_info": "",
+    "captura_imagen_link": "",
     "Visitas (inicialmente privado)": ""
   },
   {
@@ -186,7 +204,8 @@
     "imagen": "",
     "categoria": "varios",
     "observacion": "",
-    "Captura de imagen": "",
+    "login_info": "",
+    "captura_imagen_link": "",
     "Visitas (inicialmente privado)": ""
   },
   {
@@ -196,7 +215,8 @@
     "imagen": "",
     "categoria": "varios",
     "observacion": "",
-    "Captura de imagen": "",
+    "login_info": "",
+    "captura_imagen_link": "",
     "Visitas (inicialmente privado)": ""
   },
   {
@@ -206,7 +226,8 @@
     "imagen": "",
     "categoria": "varios",
     "observacion": "",
-    "Captura de imagen": "",
+    "login_info": "",
+    "captura_imagen_link": "",
     "Visitas (inicialmente privado)": ""
   },
   {
@@ -216,7 +237,8 @@
     "imagen": "",
     "categoria": "varios",
     "observacion": "",
-    "Captura de imagen": "",
+    "login_info": "",
+    "captura_imagen_link": "",
     "Visitas (inicialmente privado)": ""
   },
   {
@@ -226,7 +248,8 @@
     "imagen": "images/fiuba-apuntes.png",
     "categoria": "material_y_apuntes",
     "observacion": "Desactualizado",
-    "Captura de imagen": "",
+    "login_info": "",
+    "captura_imagen_link": "",
     "Visitas (inicialmente privado)": ""
   },
   {
@@ -236,7 +259,8 @@
     "imagen": "images/comunidad-fiuba.png",
     "categoria": "material_y_apuntes",
     "observacion": "Nuevo, en versión Beta",
-    "Captura de imagen": "",
+    "login_info": "Requiere crear cuenta",
+    "captura_imagen_link": "",
     "Visitas (inicialmente privado)": ""
   }
 ]

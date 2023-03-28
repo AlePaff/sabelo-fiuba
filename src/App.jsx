@@ -88,6 +88,7 @@ function SabeloFiuba() {
                   nombre={dato.nombre}
                   desc={dato.desc}
                   link={dato.link}
+                  login_info={dato.login_info}
                   imagen={dato.imagen}
                   categoria={dato.categoria}
                   observacion={dato.observacion}

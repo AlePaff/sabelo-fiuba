@@ -1,6 +1,8 @@
 import { Image, Flex, Text } from '@chakra-ui/react'
-import { Stack, Heading, Card, Tooltip, CardBody } from '@chakra-ui/react'
-import { WarningTwoIcon } from '@chakra-ui/icons'
+import { Stack, Heading, Card, Tooltip, CardBody, Icon } from '@chakra-ui/react'
+import { BiUserCircle } from 'react-icons/bi'
+import {IoWarning} from 'react-icons/io5'
+
 import ReactGA from "react-ga4";
 import { useState, useEffect } from 'react'
 
@@ -18,10 +20,10 @@ const onClick = () => {
 
 
 
-function CardSabelo({ nombre, desc, link, imagen, categoria, observacion }) {
+function CardSabelo({ nombre, desc, link, imagen, categoria, observacion, login_info }) {
     // const PLACEHOLDER = "images/placeholder.png";
     const PLACEHOLDER = "https://i.imgur.com/g374iQx.png";
-    const ROOT_IMGS = 'assets/';
+    const ROOT_IMGS = './src/assets/';
 
     //si no existe la imagen, se usa el placeholder
     imagen = (imagen === "") ? PLACEHOLDER : imagen
@@ -52,13 +54,13 @@ function CardSabelo({ nombre, desc, link, imagen, categoria, observacion }) {
                     overflow='hidden'
                     cursor='pointer'        // cursor de mano cuando se pasa por encima
                     onClick={() => window.open(link, "_blank") && onClick()}
-                    //no permite abrir link sin perder foco en la página actual
-                    // onMouseDown={(e) => {
-                    //     if (e.button === 1) {
-                    //         window.open(link, "_blank") && onClick();
-                    //     }
-                    // }}
-                    
+                //no permite abrir link sin perder foco en la página actual
+                // onMouseDown={(e) => {
+                //     if (e.button === 1) {
+                //         window.open(link, "_blank") && onClick();
+                //     }
+                // }}
+
                 />
 
             </div>
@@ -73,7 +75,14 @@ function CardSabelo({ nombre, desc, link, imagen, categoria, observacion }) {
                     {observacion && (
                         <Tooltip label={observacion} fontSize='md' className='new-line'>
                             <button style={{ cursor: 'auto' }}>
-                                <WarningTwoIcon w={6} h={6} color="red.500" />
+                                <Icon as={IoWarning} w={7} h={7} color="red.400" />
+                            </button>
+                        </Tooltip>
+                    )}
+                    {login_info && (
+                        <Tooltip label={login_info} fontSize='md' className='new-line'>
+                            <button style={{ cursor: 'auto' }}>
+                                <Icon as={BiUserCircle} w={7} h={7} color="blue.300" />
                             </button>
                         </Tooltip>
                     )}
