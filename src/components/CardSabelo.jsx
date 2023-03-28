@@ -21,7 +21,7 @@ const onClick = () => {
 function CardSabelo({ nombre, desc, link, imagen, categoria, observacion }) {
     // const PLACEHOLDER = "images/placeholder.png";
     const PLACEHOLDER = "https://i.imgur.com/g374iQx.png";
-
+    const ROOT_IMGS = './src/assets/';
     //si no existe la imagen, se usa el placeholder
     imagen = (imagen === "") ? PLACEHOLDER : imagen
 
@@ -44,23 +44,20 @@ function CardSabelo({ nombre, desc, link, imagen, categoria, observacion }) {
             <div className='img-hover-zoom'>
                 <Image
                     // maxWidth='100%'
-                    src={'./assets/' + imagen}
+                    src={ROOT_IMGS + imagen}
                     alt={nombre}
                     fallbackSrc={PLACEHOLDER}
-                    // fallbackSrc={'./assets/' + PLACEHOLDER}
                     fit='cover'
                     overflow='hidden'
                     cursor='pointer'        // cursor de mano cuando se pasa por encima
                     onClick={() => window.open(link, "_blank") && onClick()}
-                    //permitir middle click pero que me deje en la misma página y no me redirieja a la nueva
-                    onMouseDown={(e) => {
-                        if (e.button === 1) {
-                            e.preventDefault();
-                            window.open(link, "_blank, noopener,noreferrer");
-                            onClick();
-                        }
-
-                    }}
+                    //no permite abrir link sin perder foco en la página actual
+                    // onMouseDown={(e) => {
+                    //     if (e.button === 1) {
+                    //         window.open(link, "_blank") && onClick();
+                    //     }
+                    // }}
+                    
                 />
 
             </div>
