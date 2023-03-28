@@ -43,9 +43,9 @@ function CardSabelo({ nombre, desc, link, imagen, categoria, observacion }) {
             <div className='img-hover-zoom'>
                 <Image
                     // maxWidth='100%'
-                    src={'src/assets/' + imagen}
+                    src={'./src/assets/' + imagen}
                     alt={nombre}
-                    fallbackSrc={'src/assets/' + PLACEHOLDER}
+                    fallbackSrc={'./src/assets/' + PLACEHOLDER}
                     fit='cover'
                     overflow='hidden'
                     cursor='pointer'        // cursor de mano cuando se pasa por encima
