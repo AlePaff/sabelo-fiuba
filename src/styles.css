@@ -1,22 +1,9 @@
 
 
 
-
-/*margen general de la pagina*/
 #todas {
 	margin-bottom: 30px;
-	/* margin-top: 40px; */
-
-	/* permite que al alejar quede centrado todo el contenido */
-	/* display: flex;
-	flex-direction: column;
-	width: 100%;
-	align-items: center; */
 }
-
-/* colores para el body entero  */
-/* background-color: #343838; */
-/* color: darkgray; */
 
 .section {
 	padding: 10px;
@@ -45,7 +32,6 @@
 	justify-content: stretch;
 	align-items: stretch;
 }
-
 
 
 
