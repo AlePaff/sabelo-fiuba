@@ -12,7 +12,7 @@ const mobile_size_pixel = 750;
 const onClick = () => {
     ReactGA.event({
         category: "card_sabelo_category",
-        action: "click_card_sabelo",
+        action: "Click_card_sabelo",
         label: "Card",
         value: 1,
     });

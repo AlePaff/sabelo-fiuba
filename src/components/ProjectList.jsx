@@ -4,7 +4,7 @@ import ReactGA from "react-ga4";
 const onClick = () => {
     ReactGA.event({
         category: "card_varios_category",
-        action: "click_card_varios",
+        action: "Click_card_varios",
         label: "Card",
         value: 1,
     });
