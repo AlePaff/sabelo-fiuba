@@ -1,17 +1,12 @@
 
 
 
-#todas {
-	margin-bottom: 30px;
-}
-
 .section {
-	padding: 10px;
-	margin-top: 10px;
-	margin-right: 20px;
-	margin-left: 20px;
+	padding: 2rem;
+	/* padding-top: 30px; */
+	/* margin: 0.5rem 0.5rem 0 0.5rem;
 	text-align: center;
-	border-radius: 10px;
+	border-radius: 10px; */
 }
 
 /*colores de cada seccion*/
@@ -28,29 +23,16 @@
 .display-cards-grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-gap: 1rem;
+	gap: 1rem;
 	justify-content: stretch;
 	align-items: stretch;
 }
-
-
 
 /* display: 'flex', flexDirection: 'column', alignItems: 'left', justifyContent: 'center', maxWidth: '1800px'} */
 .display-cards-column {
 	display: flex;
 	flex-direction: column;
-	/* display: grid;
-	flex-direction: column;
-	justify-content: stretch;
-	align-items: stretch; */
-
-
-	/* justify-content: left;
-	align-items: left; */
-	max-width: 1600px;
-	/* min-width: 100%; */
-	/* width: 100%; */
-	gap: 2px;
+	gap: 3px;
 }
 
 

@@ -30,7 +30,7 @@ function SabeloFiuba() {
 
   return (
     <>
-      <div id="todas">
+      <div>
 
         {/* mapea cada dato del json y crea un componente CardSabelo y de
          acuerdo a la categoria a la que pertenece le crea una seccion */}
@@ -59,7 +59,7 @@ function SabeloFiuba() {
 
 
         {/* Seccion Varios */}
-        <Section key={categoriasAll["varios"].titulo} display={"display-cards-column"} bgColor={bgColorCategorias["varios"] + " section"} titulo={categoriasAll["varios"].titulo} desc={categoriasAll["varios"].desc} footerDesc={categoriasAll["varios"].footerDesc}>
+        <Section key={proyectos_varios.titulo} display={"display-cards-column"} bgColor={bgColorCategorias["varios"] + " section"} titulo={categoriasAll["varios"].titulo} desc={categoriasAll["varios"].desc} footerDesc={categoriasAll["varios"].footerDesc}>
           {proyectos_varios.filter(dato => dato.categoria === "varios").map(dato => {
             return (
               <CardVarios
