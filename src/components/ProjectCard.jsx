@@ -1,6 +1,7 @@
 import { Image, Flex, Text, Stack, Heading, Card, Tooltip, CardBody, Icon } from '@chakra-ui/react'
 import { BiUserCircle } from 'react-icons/bi'
 import {IoWarning} from 'react-icons/io5'
+import InteractionMetrics from './InteractionMetrics'
 
 import ReactGA from "react-ga4";
 import { useState, useEffect } from 'react'
@@ -85,6 +86,9 @@ function CardSabelo({ nombre, desc, link, imagen, categoria, observacion, login_
                             </button>
                         </Tooltip>
                     )}
+                    {
+                        <InteractionMetrics></InteractionMetrics>
+                    }
                 </Flex>
 
                 <Text dangerouslySetInnerHTML={{ __html: desc }}>

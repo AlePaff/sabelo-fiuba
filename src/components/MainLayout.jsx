@@ -1,11 +1,11 @@
 import Section from './Section'
-import CardSabelo from './CardSabelo'
-import CardVarios from './CardVarios'
+import ProjectCard from './ProjectCard'
+import ProjectList from './ProjectList'
 import Footer from './Footer'
 
-import proyectos from './../data/proyectos.json'
-import proyectos_varios from './../data/proyectos_varios.json'
-import categoriasAll from './../data/sections_desc.json'
+import proyectos from '../data/proyectos.json'
+import proyectos_varios from '../data/proyectos_varios.json'
+import categoriasAll from '../data/sections_desc.json'
 
 
 const bgColorCategorias = {
@@ -32,7 +32,7 @@ function SabeloFiuba() {
     <>
       <div>
 
-        {/* mapea cada dato del json y crea un componente CardSabelo y de
+        {/* mapea cada dato del json y crea un componente ProjectCard y de
          acuerdo a la categoria a la que pertenece le crea una seccion */}
         {categoriasUnicas.map(categoria => {
           return (
@@ -41,7 +41,7 @@ function SabeloFiuba() {
               {/* Solo muestra los datos que pertenecen a la categoria */}
               {proyectos.filter(dato => dato.categoria === categoria).map(dato => {
                 return (
-                  <CardSabelo
+                  <ProjectCard
                     key={dato.nombre}
                     nombre={dato.nombre}
                     desc={dato.desc}
@@ -62,7 +62,7 @@ function SabeloFiuba() {
         <Section key={proyectos_varios.titulo} display={"display-cards-column"} bgColor={bgColorCategorias["varios"] + " section"} titulo={categoriasAll["varios"].titulo} desc={categoriasAll["varios"].desc} footerDesc={categoriasAll["varios"].footerDesc}>
           {proyectos_varios.filter(dato => dato.categoria === "varios").map(dato => {
             return (
-              <CardVarios
+              <ProjectList
                 key={dato.nombre}
                 nombre={dato.nombre}
                 desc={dato.desc}
