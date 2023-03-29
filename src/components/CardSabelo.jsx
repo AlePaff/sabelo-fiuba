@@ -1,5 +1,4 @@
-import { Image, Flex, Text } from '@chakra-ui/react'
-import { Stack, Heading, Card, Tooltip, CardBody, Icon } from '@chakra-ui/react'
+import { Image, Flex, Text, Stack, Heading, Card, Tooltip, CardBody, Icon } from '@chakra-ui/react'
 import { BiUserCircle } from 'react-icons/bi'
 import {IoWarning} from 'react-icons/io5'
 

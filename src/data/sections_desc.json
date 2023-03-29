@@ -1,0 +1,25 @@
+{
+    "material_y_apuntes": {
+        "titulo": "Material y apuntes",
+        "desc": "Para paginas que engloban muchas materias",
+        "footerDesc": "Tener en cuenta que varias materias son compartidas entre carreras, asi algo de civil puede servir para mecánica o informática"
+    },
+    "general": {
+        "titulo": "General"
+    },
+    "cursos_y_opiniones": {
+        "titulo": "Cursos y Opiniones"
+    },
+    "organizativo": {
+        "titulo": "Organizativo"
+    },
+    "grupos": {
+        "titulo": "Grupos"
+    },
+    "noticias": {
+        "titulo": "Noticias"
+    },
+    "varios": {
+        "titulo": "Varios"
+    }
+}
