@@ -1,6 +1,6 @@
 import { Image, Flex, Text, Stack, Heading, Card, Tooltip, CardBody, Icon } from '@chakra-ui/react'
 import { BiUserCircle } from 'react-icons/bi'
-import {IoWarning} from 'react-icons/io5'
+import { IoWarning } from 'react-icons/io5'
 import InteractionMetrics from './InteractionMetrics'
 
 import ReactGA from "react-ga4";
@@ -9,7 +9,7 @@ import { useState, useEffect } from 'react'
 const mobile_size_pixel = 750;
 
 // para los eventos de google analytics
-const onClick = () => {
+const onClickHandler = () => {
     ReactGA.event({
         category: "card_sabelo_category",
         action: "Click_card_sabelo",
@@ -47,23 +47,23 @@ function CardSabelo({ nombre, desc, link, imagen, categoria, observacion, login_
     return (
         <Card><CardBody>
             <div className='img-hover-zoom'>
-                <Image
-                    // maxWidth='100%'
-                    src={ROOT_IMGS + imagen}
-                    alt={nombre}
-                    fallbackSrc={PLACEHOLDER}
-                    fit='cover'
-                    overflow='hidden'
-                    cursor='pointer'        // cursor de mano cuando se pasa por encima
-                    onClick={() => window.open(link, "_blank") && onClick()}
-                //no permite abrir link sin perder foco en la página actual
-                // onMouseDown={(e) => {
-                //     if (e.button === 1) {
-                //         window.open(link, "_blank") && onClick();
-                //     }
-                // }}
-
-                />
+                <a href={link} target="_blank"
+                    onMouseDown={(e) => {
+                        if (e.button === 1 || e.button === 0) {
+                            //middle and left click
+                            onClickHandler();
+                        }}}
+                >
+                    <Image
+                        // maxWidth='100%'
+                        src={ROOT_IMGS + imagen}
+                        alt={nombre}
+                        fallbackSrc={PLACEHOLDER}
+                        fit='cover'
+                        overflow='hidden'
+                        cursor='pointer'        // cursor de mano cuando se pasa por encima
+                    />
+                </a>
 
             </div>
             <Stack mt='4' spacing='1' textAlign='left'>
@@ -71,7 +71,7 @@ function CardSabelo({ nombre, desc, link, imagen, categoria, observacion, login_
                     {/* gap entre el icono de advertencia y el titulo */}
                     {
                         isMobile
-                            ? <Heading cursor='pointer' size='lg' onClick={() => window.open(link, "_blank") && onClick()}>{nombre}</Heading>
+                            ? <Heading cursor='pointer' size='lg' onClickHandler={() => window.open(link, "_blank") && onClickHandler()}>{nombre}</Heading>
                             : <Heading size='md'>{nombre}</Heading>
                     }
                     {observacion && (
