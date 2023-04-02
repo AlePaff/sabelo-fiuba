@@ -52,7 +52,8 @@ function CardSabelo({ nombre, desc, link, imagen, categoria, observacion, login_
                         if (e.button === 1 || e.button === 0) {
                             //middle and left click
                             onClickHandler();
-                        }}}
+                        }
+                    }}
                 >
                     <Image
                         // maxWidth='100%'
@@ -71,7 +72,10 @@ function CardSabelo({ nombre, desc, link, imagen, categoria, observacion, login_
                     {/* gap entre el icono de advertencia y el titulo */}
                     {
                         isMobile
-                            ? <Heading cursor='pointer' size='lg' onClickHandler={() => window.open(link, "_blank") && onClickHandler()}>{nombre}</Heading>
+                            // ? <Heading cursor='pointer' size='lg' onClickHandler={() => window.open(link, "_blank") && onClickHandler()}>{nombre}</Heading>
+                            ? <a href={link} target="_blank" onClick={onClickHandler()}>
+                                <Heading size='lg'>{nombre}</Heading>
+                            </a>
                             : <Heading size='md'>{nombre}</Heading>
                     }
                     {observacion && (
