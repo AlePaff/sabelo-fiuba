@@ -43,52 +43,54 @@ function Footer() {
 
 
                 <Tooltip label="Ir al repositorio" placement='top'>
-                    <IconButton
-                        icon={
-                            <img src="https://github.githubassets.com/favicons/favicon.svg"
-                                alt="github" height="32" width="32"
-                                //invertir colores de la imagen
-                                style={{ filter: 'invert(100%)' }}
-                            />}
-                        size="lg"
-                        onClick={() => window.open('https://github.com/AlePaff/sabelo-fiuba', '_blank')}
-                        isRound={true}
-                        _hover={{ backgroundColor: "#2d3748" }}
-                        variant="ghost"     //hace que solo aparezca el icono sin el fondo
-
-                    />
+                    <a href="https://github.com/AlePaff/sabelo-fiuba" target="_blank">
+                        <IconButton
+                            icon={
+                                <img src="https://github.githubassets.com/favicons/favicon.svg"
+                                    alt="github" height="32" width="32"
+                                    //invertir colores de la imagen
+                                    style={{ filter: 'invert(100%)' }}
+                                />}
+                            size="lg"
+                            isRound={true}
+                            _hover={{ backgroundColor: "#2d3748" }}
+                            variant="ghost"     //hace que solo aparezca el icono sin el fondo
+                        />
+                    </a>
                 </Tooltip>
 
                 <Tooltip label="Añadir un nuevo proyecto" placement='top'>
-                    <IconButton
-                        icon={
-                            <img src="https://www.svgrepo.com/show/217145/forms-document.svg"
-                                alt="nuevo proyecto" height="32" width="32" />}
-                        size="lg"
-                        onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSe9v8y4L8Dtek3y9u8d5uSiB5SK-P-3FUvo1nhOJIF-pD8j3A/viewform?usp=pp_url&entry.385134802=Otro', '_blank')}
-                        colorScheme="teal"
-                        isRound={true}
-                        _hover={{ backgroundColor: "#2d3748" }}
-                        variant="ghost"
-                    />
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe9v8y4L8Dtek3y9u8d5uSiB5SK-P-3FUvo1nhOJIF-pD8j3A/viewform?usp=pp_url&entry.385134802=Otro" target="_blank">
+                        <IconButton
+                            icon={
+                                <img src="https://www.svgrepo.com/show/217145/forms-document.svg"
+                                    alt="nuevo proyecto" height="32" width="32" />}
+                            size="lg"
+                            colorScheme="teal"
+                            isRound={true}
+                            _hover={{ backgroundColor: "#2d3748" }}
+                            variant="ghost"
+                        />
+                    </a>
                 </Tooltip>
 
                 <Tooltip label="Feedback" placement='top'>
-                    <IconButton
-                        icon={
-                            <img src="https://i.imgur.com/kZ3x8aj.png"
-                                alt="feedback" height="32" width="32" />}
-                        size="lg"
-                        colorScheme="teal"
-                        onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScHmIO1xOiU0hGEVrJgEbKwY8YR4RDCv7aPU451oGFxkY_rgg/viewform?usp=sf_link', '_blank')}
-                        isRound={true}
-                        _hover={{ backgroundColor: "#2d3748" }}
-                        variant="ghost"
-                    />
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScHmIO1xOiU0hGEVrJgEbKwY8YR4RDCv7aPU451oGFxkY_rgg/viewform?usp=sf_link" target="_blank">
+                        <IconButton
+                            icon={
+                                <img src="https://i.imgur.com/kZ3x8aj.png"
+                                    alt="feedback" height="32" width="32" />}
+                            size="lg"
+                            colorScheme="teal"
+                            isRound={true}
+                            _hover={{ backgroundColor: "#2d3748" }}
+                            variant="ghost"
+                        />
+                    </a>
                 </Tooltip>
 
             </Flex>
-            
+
             <Text fontSize="xs" color="gray.500" mt="2">
                 Última actualización: {showData}
             </Text>
