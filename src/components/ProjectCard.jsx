@@ -93,7 +93,7 @@ function CardSabelo({ nombre, desc, link, imagen, categoria, observacion, login_
                         </Tooltip>
                     )}
                     {
-                        // <InteractionMetrics></InteractionMetrics>
+                        <InteractionMetrics id_card={nombre}></InteractionMetrics>
                     }
                 </Flex>
 
