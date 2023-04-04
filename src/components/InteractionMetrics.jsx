@@ -2,8 +2,8 @@ import { AiOutlineHeart, AiFillHeart } from 'react-icons/ai'
 import { Icon, Text, Flex } from '@chakra-ui/react'
 import { useState, useEffect } from 'react'
 import { db } from '../firebaseSetup'
-import { useCollectionData } from "react-firebase-hooks/firestore";
-import { addDoc, increment, doc, getDoc, updateDoc, setDoc } from "firebase/firestore";
+import { increment, doc, getDoc, updateDoc, setDoc } from "firebase/firestore";
+
 
 
 function InteractionMetrics({ id_card }) {
