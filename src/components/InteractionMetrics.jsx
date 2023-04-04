@@ -3,16 +3,16 @@ import { Icon, Text, Flex } from '@chakra-ui/react'
 import { useState, useEffect } from 'react'
 import { db } from '../firebaseSetup'
 import { useCollectionData } from "react-firebase-hooks/firestore";
-import { addDoc, collection, doc, getDoc, updateDoc, setDoc } from "firebase/firestore";
+import { addDoc, increment, doc, getDoc, updateDoc, setDoc } from "firebase/firestore";
 
 
 function InteractionMetrics({ id_card }) {
     const [active, setActive] = useState(false)
-    const [likes, setLikes] = useState(0);
     const [totalLikes, setTotalLikes] = useState(0);
 
     useEffect(() => {
         //obtiene los likes de la base de datos
+        //se actualiza cada vez que cambia id_card
         const fetchLikes = async () => {
             const cardRef = doc(db, 'cards', id_card);
             const cardDoc = await getDoc(cardRef);
@@ -31,30 +31,27 @@ function InteractionMetrics({ id_card }) {
         const likedCards = JSON.parse(sessionStorage.getItem('likedCards') || '{}');      //localStorage no expira en cambio sessionStorage cuando se resetea el navegador
         if (likedCards[id_card]) {
             setActive(true);
-            setLikes(likedCards[id_card]);
         }
     }, [id_card]);      //cada vez que se actualiza el id_card
 
 
     const handleClick = async () => {
-        console.log("likes", likes, "totalLikes", totalLikes, "active", active, "local", JSON.parse(sessionStorage.getItem('likedCards') || '{}'));
-
-        if (active) {
-            setActive(false);
-            setLikes(likes - 1);
-        } else {
-            setActive(true);
-            setLikes(likes + 1);
-        }
+        // toggle active
+        setActive(!active);
 
         const cardRef = doc(db, 'cards', id_card);
         const cardDoc = await getDoc(cardRef);
 
+        //si existe en la base de datos, se actualiza, sino se crea
         if (cardDoc.exists()) {
             const cardData = cardDoc.data();
-            const newLikes = active ? cardData.likes - 1 : cardData.likes + 1;
+            var newLikes = active ? cardData.likes - 1 : cardData.likes + 1;
+            if (newLikes < 0) {
+                newLikes = 0;      //si se llega a un número negativo, se pone en 0 (no debería pasar nunca)
+                await updateDoc(cardRef, { likes: 0 });
+            }
+            await updateDoc(cardRef, { likes: active ? increment(-1) : increment(1) });
 
-            await updateDoc(cardRef, { likes: newLikes });
             setTotalLikes(newLikes);
         } else {
             await setDoc(cardRef, { likes: 1 });
@@ -63,7 +60,6 @@ function InteractionMetrics({ id_card }) {
 
         const likedCards = JSON.parse(sessionStorage.getItem('likedCards') || '{}');
         likedCards[id_card] = !active;
-        console.log("-----", "likedCards", likedCards, "id card", id_card);
         if (active) {
             delete likedCards[id_card];
         }
@@ -73,9 +69,7 @@ function InteractionMetrics({ id_card }) {
 
 
     return (
-        <Flex style={{ marginLeft: 'auto' }}>
-            {likes} |
-            {totalLikes} {totalLikes === 1 ? 'like' : 'likes'}
+        <Flex ml={'auto'}>
 
             <button
                 style={{ cursor: 'pointer' }}
@@ -89,9 +83,9 @@ function InteractionMetrics({ id_card }) {
                     _hover={{ transform: "scale(1.2)", transition: "all 0.2s ease-in-out" }}
                 />
             </button>
-            {/* <div style={{ alignSelf: 'center' }}>
-                {votos && votos.length}
-            </div> */}
+            <Text fontSize='xl' fontWeight='bold'>
+                {totalLikes}
+            </Text>
         </Flex>
     )
 }
