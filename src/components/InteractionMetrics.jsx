@@ -28,7 +28,7 @@ function InteractionMetrics({ id_card }) {
 
     useEffect(() => {
         //obtiene los likes del local storage para impedir que se pueda votar varias veces al refrescar la página
-        const likedCards = JSON.parse(sessionStorage.getItem('likedCards') || '{}');      //localStorage no expira en cambio sessionStorage cuando se resetea el navegador
+        const likedCards = JSON.parse(localStorage.getItem('likedCards') || '{}');      //localStorage no expira en cambio sessionStorage cuando se resetea el navegador
         if (likedCards[id_card]) {
             setActive(true);
         }
@@ -58,12 +58,12 @@ function InteractionMetrics({ id_card }) {
             setTotalLikes(1);
         }
 
-        const likedCards = JSON.parse(sessionStorage.getItem('likedCards') || '{}');
+        const likedCards = JSON.parse(localStorage.getItem('likedCards') || '{}');
         likedCards[id_card] = !active;
         if (active) {
             delete likedCards[id_card];
         }
-        sessionStorage.setItem('likedCards', JSON.stringify(likedCards));
+        localStorage.setItem('likedCards', JSON.stringify(likedCards));
     };
 
 
