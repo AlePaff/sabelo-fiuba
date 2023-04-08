@@ -7,19 +7,7 @@
     "categoria": "material_y_apuntes",
     "observacion": "",
     "login_info": "",
-    "captura_imagen_link": "http://wiki.foros-fiuba.com.ar/materias:66:70",
-    "Visitas (inicialmente privado)": ""
-  },
-  {
-    "nombre": "Fiuba Drive",
-    "desc": "Drive creado para subir material de tu curso y encontrar el de otros",
-    "link": "https://sites.google.com/view/drive-fiuba/",
-    "imagen": "images/fiuba-drive.jpg",
-    "categoria": "material_y_apuntes",
-    "observacion": "",
-    "login_info": "",
-    "captura_imagen_link": "",
-    "Visitas (inicialmente privado)": ""
+    "captura_imagen_link": "http://wiki.foros-fiuba.com.ar/materias:66:70"
   },
   {
     "nombre": "SK FIUBA",
@@ -29,8 +17,7 @@
     "categoria": "material_y_apuntes",
     "observacion": "",
     "login_info": "",
-    "captura_imagen_link": "https://sites.google.com/view/skfiuba/materias/%C3%A1lgebra-ii?authuser=0",
-    "Visitas (inicialmente privado)": ""
+    "captura_imagen_link": "https://sites.google.com/view/skfiuba/materias/%C3%A1lgebra-ii?authuser=0"
   },
   {
     "nombre": "Filadd",
@@ -40,8 +27,7 @@
     "categoria": "material_y_apuntes",
     "observacion": "",
     "login_info": "Requiere login",
-    "captura_imagen_link": "",
-    "Visitas (inicialmente privado)": ""
+    "captura_imagen_link": ""
   },
   {
     "nombre": "JS Apuntes",
@@ -51,8 +37,17 @@
     "categoria": "material_y_apuntes",
     "observacion": "",
     "login_info": "",
-    "captura_imagen_link": "",
-    "Visitas (inicialmente privado)": ""
+    "captura_imagen_link": ""
+  },
+  {
+    "nombre": "Fiuba Drive",
+    "desc": "Drive creado para subir material de tu curso y encontrar el de otros",
+    "link": "https://sites.google.com/view/drive-fiuba/",
+    "imagen": "images/fiuba-drive.jpg",
+    "categoria": "material_y_apuntes",
+    "observacion": "",
+    "login_info": "",
+    "captura_imagen_link": ""
   },
   {
     "nombre": "Repos Fiuba",
@@ -62,8 +57,7 @@
     "categoria": "material_y_apuntes",
     "observacion": "",
     "login_info": "",
-    "captura_imagen_link": "",
-    "Visitas (inicialmente privado)": ""
+    "captura_imagen_link": ""
   },
   {
     "nombre": "Kiwipedia",
@@ -73,8 +67,7 @@
     "categoria": "material_y_apuntes",
     "observacion": "",
     "login_info": "Requiere login con cuenta de Outlook",
-    "captura_imagen_link": "",
-    "Visitas (inicialmente privado)": ""
+    "captura_imagen_link": ""
   },
   {
     "nombre": "DIQ Fiuba",
@@ -84,8 +77,7 @@
     "categoria": "material_y_apuntes",
     "observacion": "",
     "login_info": "",
-    "captura_imagen_link": "",
-    "Visitas (inicialmente privado)": ""
+    "captura_imagen_link": ""
   },
   {
     "nombre": "Fiuba Consultas",
@@ -95,8 +87,7 @@
     "categoria": "general",
     "observacion": "",
     "login_info": "",
-    "captura_imagen_link": "",
-    "Visitas (inicialmente privado)": ""
+    "captura_imagen_link": ""
   },
   {
     "nombre": "Foros Fiuba",
@@ -106,8 +97,7 @@
     "categoria": "general",
     "observacion": "En desuso",
     "login_info": "",
-    "captura_imagen_link": "",
-    "Visitas (inicialmente privado)": ""
+    "captura_imagen_link": ""
   },
   {
     "nombre": "Dolly Fiuba",
@@ -117,8 +107,7 @@
     "categoria": "cursos_y_opiniones",
     "observacion": "",
     "login_info": "",
-    "captura_imagen_link": "",
-    "Visitas (inicialmente privado)": ""
+    "captura_imagen_link": ""
   },
   {
     "nombre": "FIUBA Opiniones de Cursos",
@@ -128,8 +117,7 @@
     "categoria": "cursos_y_opiniones",
     "observacion": "Actualmente caido\nUltima actualización 1c 2021",
     "login_info": "",
-    "captura_imagen_link": "",
-    "Visitas (inicialmente privado)": ""
+    "captura_imagen_link": ""
   },
   {
     "nombre": "Fiuba Map",
@@ -139,8 +127,7 @@
     "categoria": "organizativo",
     "observacion": "",
     "login_info": "",
-    "captura_imagen_link": "",
-    "Visitas (inicialmente privado)": ""
+    "captura_imagen_link": ""
   },
   {
     "nombre": "Fiuba Plan",
@@ -150,8 +137,7 @@
     "categoria": "organizativo",
     "observacion": "",
     "login_info": "",
-    "captura_imagen_link": "",
-    "Visitas (inicialmente privado)": ""
+    "captura_imagen_link": ""
   },
   {
     "nombre": "Fiuba Verse",
@@ -161,8 +147,7 @@
     "categoria": "grupos",
     "observacion": "",
     "login_info": "",
-    "captura_imagen_link": "",
-    "Visitas (inicialmente privado)": ""
+    "captura_imagen_link": ""
   },
   {
     "nombre": "Grupos fiuba",
@@ -172,8 +157,7 @@
     "categoria": "grupos",
     "observacion": "",
     "login_info": "",
-    "captura_imagen_link": "",
-    "Visitas (inicialmente privado)": ""
+    "captura_imagen_link": ""
   },
   {
     "nombre": "Fiuba Noticias",
@@ -183,8 +167,7 @@
     "categoria": "noticias",
     "observacion": "",
     "login_info": "",
-    "captura_imagen_link": "",
-    "Visitas (inicialmente privado)": ""
+    "captura_imagen_link": ""
   },
   {
     "nombre": "MLI fiuba",
@@ -194,8 +177,7 @@
     "categoria": "noticias",
     "observacion": "",
     "login_info": "",
-    "captura_imagen_link": "",
-    "Visitas (inicialmente privado)": ""
+    "captura_imagen_link": ""
   },
   
   {
@@ -206,8 +188,7 @@
     "categoria": "material_y_apuntes",
     "observacion": "Desactualizado",
     "login_info": "",
-    "captura_imagen_link": "",
-    "Visitas (inicialmente privado)": ""
+    "captura_imagen_link": ""
   },
   {
     "nombre": "Comunidad Fiuba",
@@ -217,7 +198,6 @@
     "categoria": "material_y_apuntes",
     "observacion": "Nuevo, en versión Beta",
     "login_info": "Requiere crear cuenta",
-    "captura_imagen_link": "",
-    "Visitas (inicialmente privado)": ""
+    "captura_imagen_link": ""
   }
 ]
