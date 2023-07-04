@@ -192,11 +192,11 @@
   },
   {
     "nombre": "Comunidad Fiuba",
-    "desc": "(BETA) Sitio para subir y buscar facilmente material de la fiuba (examenes, resumenes, etc)",
+    "desc": "Sitio para subir y buscar facilmente material de la fiuba (examenes, resumenes, etc)",
     "link": "https://comunidad-fiuba.github.io/",
     "imagen": "images/comunidad-fiuba.png",
     "categoria": "material_y_apuntes",
-    "observacion": "Nuevo, en versión Beta",
+    "observacion": "",
     "login_info": "Requiere crear cuenta",
     "captura_imagen_link": ""
   }
