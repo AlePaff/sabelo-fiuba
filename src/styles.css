@@ -1,5 +1,3 @@
-
-
 .section {
 	padding: 2rem;
 	/* padding-top: 30px; */
@@ -9,14 +7,34 @@
 }
 
 /*colores de cada seccion*/
-.seccion-material-apuntes{background-color: #EEF6F4;}
+.seccion-material-apuntes {
+	background-color: #EEF6F4;
+}
+
 /*.seccion-material-apuntes{background-color: #f9dbd4;}*/
-.seccion-general{background-color: #EEFFEB;}
-.seccion-cursos-opiniones{background-color: #EEF6F4;}
-.seccion-organizacion{background-color: #E5FBFF;}
-.seccion-grupos{background-color: #EEFFEB;}
-.seccion-noticias{background-color: #E5FBFF;}
-.seccion-varios{background-color: #EEFFEB;}
+.seccion-general {
+	background-color: #EEFFEB;
+}
+
+.seccion-cursos-opiniones {
+	background-color: #EEF6F4;
+}
+
+.seccion-organizacion {
+	background-color: #E5FBFF;
+}
+
+.seccion-grupos {
+	background-color: #EEFFEB;
+}
+
+.seccion-noticias {
+	background-color: #E5FBFF;
+}
+
+.seccion-varios {
+	background-color: #EEFFEB;
+}
 
 
 .display-cards-grid {
@@ -35,7 +53,7 @@
 }
 
 
-/*zoom al pasar el mouse por encima https://w3bits.com/css-image-hover-zoom/ */
+/* Zoom al pasar el mouse por encima https://w3bits.com/css-image-hover-zoom/. */
 .img-hover-zoom {
 	max-height: 300px;
 	overflow: hidden;
@@ -50,7 +68,7 @@
 }
 
 
-.new-line{
+.new-line {
 	white-space: pre-line;
 	vertical-align: bottom;
 }
@@ -60,6 +78,7 @@
 .links-in-text {
 	color: rgb(65, 163, 255);
 }
+
 .links-in-text:hover {
 	color: rgb(255, 65, 65);
 }
