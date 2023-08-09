@@ -1,7 +1,7 @@
 [
     {
-      "nombre": "Catálogo FIUBA",
-      "desc": "Para buscar libros y ver si están disponibles en la biblioteca (visitar su FaceBook para novedades).",
+      "nombre": "Catalogo fiuba",
+      "desc": "Para buscar libros y ver si estan disponibles en la biblioteca (visitar su facebook para novedades)",
       "link": "http://catalogo.fi.uba.ar/",
       "imagen": "",
       "categoria": "varios",
@@ -12,7 +12,7 @@
     },
     {
       "nombre": "Precios librería",
-      "desc": "Lista de precios de la librería de la sede de Paseo Colón.",
+      "desc": "Lista de precios de la libreria de la sede de Paseo Colon",
       "link": "https://docs.google.com/spreadsheets/d/1-1hmf9SmvlTeDGO6C5ZgdDy1q4MhAAGt/",
       "imagen": "",
       "categoria": "varios",
@@ -22,8 +22,8 @@
       "Visitas (inicialmente privado)": ""
     },
     {
-      "nombre": "Videos FIUBA",
-      "desc": "Videos sobre charlas, seminarios y congresos dados en FIUBA y transmitidos por YouTube.",
+      "nombre": "Videos Fiuba",
+      "desc": "Videos sobre charlas, seminarios y congresos dados en fiuba y transmitidos por youtube",
       "link": "https://www.youtube.com/c/FIUBAoficial/videos",
       "imagen": "",
       "categoria": "varios",
@@ -33,8 +33,8 @@
       "Visitas (inicialmente privado)": ""
     },
     {
-      "nombre": "Twitch del Departamento de Computación",
-      "desc": "Directos en Twitch de proyectos, charlas, novedades y discusiones de la carrera.",
+      "nombre": "Twitch computacion fiuba",
+      "desc": "Directos en twitch de proyectos, charlas, novedades y discusiones de la carrera",
       "link": "https://www.twitch.tv/computacion_fiuba",
       "imagen": "",
       "categoria": "varios",

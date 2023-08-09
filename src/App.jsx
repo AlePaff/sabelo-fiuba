@@ -1,5 +1,5 @@
 import './App.css';
-import "./styles.css" // Se usará para cada componente también.
+import "./styles.css"       //se usará para cada componente tambien
 import { ChakraProvider } from '@chakra-ui/react'
 import MainLayout from './components/MainLayout';
 
