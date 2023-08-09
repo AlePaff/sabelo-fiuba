@@ -220,7 +220,7 @@
   },{
     "id": "micrositio-sga",
     "nombre": "Micrositio Secretaría de Gestión Académica",
-    "desc": "Web con información actualizada sobre toda la actividad de la Secretaría de Gestión Académica como: trámites, inscripciones, asignaturas, planes de estudio, encuestas del SIU Guarani y diferentes accesos a los sistemas académicos.",
+    "desc": "Web con información actualizada sobre trámites, inscripciones, asignaturas, planes de estudio, encuestas del SIU Guarani y diferentes accesos a los sistemas académicos.",
     "link": "https://sites.google.com/fi.uba.ar/academica?pli=1&authuser=1",
     "imagen": "images/micrositio-sga.png",
     "categoria": "general",
