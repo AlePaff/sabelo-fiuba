@@ -197,7 +197,6 @@
     "login_info": "",
     "captura_imagen_link": ""
   },
-  
   {
     "id": "fiuba-apuntes",
     "nombre": "FIUBA Apuntes",
@@ -208,8 +207,7 @@
     "observacion": "Desactualizado",
     "login_info": "",
     "captura_imagen_link": ""
-  },
-  {
+  },{
     "id": "comunidad-fiuba",
     "nombre": "Comunidad FIUBA",
     "desc": "Sitio para subir y buscar fácilmente material de la FIUBA (exámenes, resúmenes, etc.).",
@@ -218,6 +216,26 @@
     "categoria": "material_y_apuntes",
     "observacion": "",
     "login_info": "Requiere crear cuenta.",
+    "captura_imagen_link": ""
+  },{
+    "id": "micrositio-sga",
+    "nombre": "Micrositio Secretaría de Gestión Académica",
+    "desc": "Web con información actualizada sobre toda la actividad de la Secretaría de Gestión Académica como: trámites, inscripciones, asignaturas, planes de estudio, encuestas del SIU Guarani y diferentes accesos a los sistemas académicos.",
+    "link": "https://sites.google.com/fi.uba.ar/academica?pli=1&authuser=1",
+    "imagen": "images/micrositio-sga.png",
+    "categoria": "general",
+    "observacion": "",
+    "login_info": "Requiere login con cuenta institucional.",
+    "captura_imagen_link": ""
+  },{
+    "id": "sitio-oficial",
+    "nombre": "Sitio Oficial de la FIUBA",
+    "desc": "Web oficial de la Facultad de Ingeniería de la UBA. Se encuentra informacion general al público, noticias, boletines, enlaces a sitios afín, información sobre las carreras, charlas y visitas, planificaciones, etc.",
+    "link": "https://www.fi.uba.ar/",
+    "imagen": "images/sitio-oficial.png",
+    "categoria": "general",
+    "observacion": "",
+    "login_info": "",
     "captura_imagen_link": ""
   }
 ]
