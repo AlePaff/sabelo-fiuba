@@ -1,8 +1,8 @@
 {
     "material_y_apuntes": {
         "titulo": "Material y apuntes",
-        "desc": "Para paginas que engloban muchas materias",
-        "footerDesc": "Tener en cuenta que varias materias son compartidas entre carreras, asi algo de civil puede servir para mecánica o informática"
+        "desc": "Para páginas que engloban muchas materias.",
+        "footerDesc": "Tener en cuenta que varias materias son compartidas entre carreras, así algo de Civil puede servir para Mecánica o Informática."
     },
     "general": {
         "titulo": "General"
