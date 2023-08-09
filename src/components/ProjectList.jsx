@@ -11,7 +11,7 @@ const onClick = () => {
 };
 
 
-function CardVarios({ nombre, desc, link, categoria, observacion }) {
+function CardVarios({ id, nombre, desc, link, categoria, observacion }) {
     return (
         <a
             href={link}

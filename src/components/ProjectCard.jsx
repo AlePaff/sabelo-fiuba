@@ -20,7 +20,7 @@ const onClickHandler = () => {
 
 
 
-function CardSabelo({ nombre, desc, link, imagen, categoria, observacion, login_info }) {
+function CardSabelo({ id, nombre, desc, link, imagen, categoria, observacion, login_info }) {
     // const PLACEHOLDER = "images/placeholder.png";
     const PLACEHOLDER = "https://i.imgur.com/g374iQx.png";
     const ROOT_IMGS = './assets/';
@@ -93,7 +93,7 @@ function CardSabelo({ nombre, desc, link, imagen, categoria, observacion, login_
                         </Tooltip>
                     )}
                     {
-                        <InteractionMetrics id_card={nombre}></InteractionMetrics>
+                        <InteractionMetrics id_card={id}></InteractionMetrics>
                     }
                 </Flex>
 

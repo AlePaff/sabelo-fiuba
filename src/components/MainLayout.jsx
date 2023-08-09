@@ -42,7 +42,8 @@ function SabeloFiuba() {
               {proyectos.filter(dato => dato.categoria === categoria).map(dato => {
                 return (
                   <ProjectCard
-                    key={dato.nombre}
+                    key={dato.id}
+                    id={dato.id}
                     nombre={dato.nombre}
                     desc={dato.desc}
                     link={dato.link}
@@ -63,7 +64,8 @@ function SabeloFiuba() {
           {proyectos_varios.filter(dato => dato.categoria === "varios").map(dato => {
             return (
               <ProjectList
-                key={dato.nombre}
+                key={dato.id}
+                id={dato.id}
                 nombre={dato.nombre}
                 desc={dato.desc}
                 link={dato.link}

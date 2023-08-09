@@ -1,5 +1,6 @@
 [
   {
+    "id":"wiki-fiuba",
     "nombre": "Wiki FIUBA",
     "desc": "Espacio colaborativo donde podés encontrar materiales de estudio (exámenes, guias, libros, etc.) para cualquier carrera.",
     "link": "http://wiki.foros-fiuba.com.ar/",
@@ -10,6 +11,7 @@
     "captura_imagen_link": "http://wiki.foros-fiuba.com.ar/materias:66:70"
   },
   {
+    "id":"sk-fiuba",
     "nombre": "SK FIUBA",
     "desc": "Guias, exámenes y apuntes para las materias de Ingeniería Industrial.",
     "link": "https://sites.google.com/view/skfiuba/materias?authuser=0",
@@ -20,6 +22,7 @@
     "captura_imagen_link": "https://sites.google.com/view/skfiuba/materias/%C3%A1lgebra-ii?authuser=0"
   },
   {
+    "id":"filadd",
     "nombre": "Filadd",
     "desc": "Distintos recursos de varias materias de la FIUBA.",
     "link": "https://filadd.com/resultados-aportes/uba/ingenieria-uba/probabilidad-y-estadistica-a/51/2349",
@@ -30,6 +33,7 @@
     "captura_imagen_link": ""
   },
   {
+    "id":"js-apuntes",
     "nombre": "JS Apuntes",
     "desc": "Material dividido por carpetas descargables para materias de Ingeniería Industrial.",
     "link": "https://sites.google.com/view/site-js-apuntes",
@@ -40,6 +44,7 @@
     "captura_imagen_link": ""
   },
   {
+    "id":"fiuba-drive",
     "nombre": "Fiuba Drive",
     "desc": "Drive creado para subir material de tu curso y encontrar el de otros.",
     "link": "https://sites.google.com/view/drive-fiuba/",
@@ -50,6 +55,7 @@
     "captura_imagen_link": ""
   },
   {
+    "id":"repos-fiuba",
     "nombre": "Repos FIUBA",
     "desc": "Colección de repositorios con material de cursadas de materias, principalmente Informática.",
     "link": "https://fede.dm/FIUBA-Repos/",
@@ -60,6 +66,7 @@
     "captura_imagen_link": ""
   },
   {
+    "id":"kiwipedia",
     "nombre": "Kiwipedia",
     "desc": "Material dividido por departamentos y materias para Ingeniería Industrial.",
     "link": "https://fiubaar.sharepoint.com/sites/kiwipedia/SitePages/Kiwipedia.aspx",
@@ -70,6 +77,7 @@
     "captura_imagen_link": ""
   },
   {
+    "id": "diq-fiuba",
     "nombre": "DIQ FIUBA",
     "desc": "Recolección de material pertinente a la carrera de Ingeniería Química.",
     "link": "https://sites.google.com/view/diq-fiuba/p%C3%A1gina-principal?authuser=0",
@@ -80,6 +88,7 @@
     "captura_imagen_link": ""
   },
   {
+    "id": "fiuba-consultas",
     "nombre": "FIUBA Consultas",
     "desc": "Grupo general sobre consultas, temas administrativos, noticias, polémica y memes.",
     "link": "https://www.facebook.com/groups/fiubaconsultas2",
@@ -90,6 +99,7 @@
     "captura_imagen_link": ""
   },
   {
+    "id": "foros-fiuba",
     "nombre": "Foros FIUBA",
     "desc": "Foro general sobre discusión, materias y carreras de la FIUBA.",
     "link": "http://www.foros-fiuba.com.ar/",
@@ -100,6 +110,7 @@
     "captura_imagen_link": ""
   },
   {
+    "id": "dolly-fiuba",
     "nombre": "Dolly FIUBA",
     "desc": "Encuestas de estudiantes sobre cada cátedra y materia de la FIUBA.",
     "link": "https://dollyfiuba.com/",
@@ -110,6 +121,7 @@
     "captura_imagen_link": ""
   },
   {
+    "id": "fiuba-opiniones-cursos",
     "nombre": "FIUBA Opiniones de Cursos",
     "desc": "Opiniones sobre materias del Departamento de Computación, para más información del proyecto ver <a class=\"links-in-text\" href=\"https://github.com/Arkenan/fiuba_opiniones_de_curso/\" target=\"_blank\">su repositorio en GitHub</a> y <a class=\"links-in-text\" href=\"https://github.com/CrossNox/FIUBA-encuesta-depto-computacion\" target=\"_blank\">fuente</a>.",
     "link": "https://web.archive.org/web/20221103220942/https://fiuba-opiniones-de-curso.herokuapp.com/",
@@ -120,6 +132,7 @@
     "captura_imagen_link": ""
   },
   {
+    "id": "fiuba-map",
     "nombre": "FIUBA Map",
     "desc": "Diagrama interactivo de correlatividades de materias de cada carrera.",
     "link": "https://fede.dm/FIUBA-Map/",
@@ -130,6 +143,7 @@
     "captura_imagen_link": ""
   },
   {
+    "id": "fiuba-plan",
     "nombre": "FIUBA Plan",
     "desc": "Organizador de horarios.",
     "link": "https://fede.dm/FIUBA-Plan/",
@@ -140,6 +154,7 @@
     "captura_imagen_link": ""
   },
   {
+    "id": "fiuba-verse",
     "nombre": "FIUBA Verse",
     "desc": "Todo tipo de grupos de Telegram de materias, noticias y ocio.",
     "link": "https://fiubaverse.github.io/",
@@ -150,6 +165,7 @@
     "captura_imagen_link": ""
   },
   {
+    "id": "grupos-fiuba",
     "nombre": "Grupos FIUBA",
     "desc": "Grupos de WhatsApp de algunas materias.",
     "link": "https://linktr.ee/grupos_fiuba",
@@ -160,6 +176,7 @@
     "captura_imagen_link": ""
   },
   {
+    "id": "fiuba-noticias",
     "nombre": "FIUBA Noticias",
     "desc": "Canal de Telegram con noticias sobre la FIUBA.",
     "link": "https://t.me/s/FIUBA_Noticias",
@@ -170,6 +187,7 @@
     "captura_imagen_link": ""
   },
   {
+    "id": "mli-fiuba",
     "nombre": "MLI FIUBA",
     "desc": "Instagram del MLI sobre noticias y novedades de la FIUBA. Ver <a class=\"links-in-text\" href=\"https://linktr.ee/mli.fiuba\" target=\"_blank\">su sitio web</a> con más información y herramientas.",
     "link": "https://www.instagram.com/mli.fiuba/?hl=es-la",
@@ -181,6 +199,7 @@
   },
   
   {
+    "id": "fiuba-apuntes",
     "nombre": "FIUBA Apuntes",
     "desc": "Los apuntes de FIUBA, en formato digital. Hechos por y para todos. De aquí vienen los famosos apuntes de <a class=\"links-in-text\" href=\"https://web.archive.org/web/20200130183529/http://web.fi.uba.ar/~mparnisari/#!/\" target=\"_blank\">M. Parnisari</a>.",
     "link": "https://fiuba-apuntes.github.io",
@@ -191,6 +210,7 @@
     "captura_imagen_link": ""
   },
   {
+    "id": "comunidad-fiuba",
     "nombre": "Comunidad FIUBA",
     "desc": "Sitio para subir y buscar fácilmente material de la FIUBA (exámenes, resúmenes, etc.).",
     "link": "https://comunidad-fiuba.github.io/",
