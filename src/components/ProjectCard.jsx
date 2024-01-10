@@ -1,6 +1,7 @@
 import { Image, Flex, Text, Stack, Heading, Card, Tooltip, CardBody, Icon } from '@chakra-ui/react'
 import { BiUserCircle } from 'react-icons/bi'
 import { IoWarning } from 'react-icons/io5'
+import { FaUniversity } from "react-icons/fa";
 import InteractionMetrics from './InteractionMetrics'
 
 import ReactGA from "react-ga4";
@@ -20,15 +21,20 @@ const onClickHandler = () => {
 
 
 
-function CardSabelo({ id, nombre, desc, link, imagen, categoria, observacion, login_info }) {
+function CardSabelo({ id, nombre, desc, link, imagen, categoria, info_extra }) {
     // const PLACEHOLDER = "images/placeholder.png";
     const PLACEHOLDER = "https://i.imgur.com/g374iQx.png";
     const ROOT_IMGS = './assets/';
 
-    // images/fiuba-drive.jpg
-
     //si no existe la imagen, se usa el placeholder
-    imagen = (imagen === "") ? PLACEHOLDER : imagen
+    imagen = (imagen === "") ? PLACEHOLDER : imagen;
+
+    // info_extra contiene 
+    // "info_extra": {
+    //     "login_info": "",
+    //     "warning": "",
+    //     "oficial": ""
+    //   },
 
     //detectar si se está en un dispositivo móvil
     const [width, setWidth] = useState(window.innerWidth);
@@ -78,17 +84,24 @@ function CardSabelo({ id, nombre, desc, link, imagen, categoria, observacion, lo
                             </a>
                             : <Heading size='md'>{nombre}</Heading>
                     }
-                    {observacion && (
-                        <Tooltip label={observacion} fontSize='md' className='new-line'>
+                    {info_extra.warning && (
+                        <Tooltip label={info_extra.warning} fontSize='md' className='new-line'>
                             <button style={{ cursor: 'auto' }}>
                                 <Icon as={IoWarning} w={7} h={7} color="red.400" />
                             </button>
                         </Tooltip>
                     )}
-                    {login_info && (
-                        <Tooltip label={login_info} fontSize='md' className='new-line'>
+                    {info_extra.login_info && (
+                        <Tooltip label={info_extra.login_info} fontSize='md' className='new-line'>
                             <button style={{ cursor: 'auto' }}>
                                 <Icon as={BiUserCircle} w={7} h={7} color="blue.300" />
+                            </button>
+                        </Tooltip>
+                    )}
+                    {info_extra.oficial && (
+                        <Tooltip label={info_extra.oficial} fontSize='md' className='new-line'>
+                            <button style={{ cursor: 'auto' }}>
+                                <Icon as={FaUniversity} w={7} h={7} color="blue.300" />
                             </button>
                         </Tooltip>
                     )}

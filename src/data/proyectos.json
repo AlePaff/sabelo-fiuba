@@ -6,8 +6,11 @@
     "link": "http://wiki.foros-fiuba.com.ar/",
     "imagen": "images/wiki-fiuba.png",
     "categoria": "material_y_apuntes",
-    "observacion": "",
-    "login_info": "",
+    "info_extra": {
+      "login_info": "",
+      "warning": "",
+      "oficial": ""
+    },
     "captura_imagen_link": "http://wiki.foros-fiuba.com.ar/materias:66:70"
   },
   {
@@ -17,8 +20,11 @@
     "link": "https://sites.google.com/view/skfiuba/materias?authuser=0",
     "imagen": "images/sk-fiuba.jpg",
     "categoria": "material_y_apuntes",
-    "observacion": "",
-    "login_info": "",
+    "info_extra": {
+      "login_info": "",
+      "warning": "",
+      "oficial": ""
+    },
     "captura_imagen_link": "https://sites.google.com/view/skfiuba/materias/%C3%A1lgebra-ii?authuser=0"
   },
   {
@@ -28,8 +34,11 @@
     "link": "https://filadd.com/resultados-aportes/uba/ingenieria-uba/probabilidad-y-estadistica-a/51/2349",
     "imagen": "images/filadd.jpg",
     "categoria": "material_y_apuntes",
-    "observacion": "",
-    "login_info": "Requiere login",
+    "info_extra": {
+      "login_info": "Requiere login",
+      "warning": "",
+      "oficial": ""
+    },
     "captura_imagen_link": ""
   },
   {
@@ -39,8 +48,11 @@
     "link": "https://sites.google.com/view/site-js-apuntes",
     "imagen": "images/js-apuntes.jpg",
     "categoria": "material_y_apuntes",
-    "observacion": "",
-    "login_info": "",
+    "info_extra": {
+      "login_info": "",
+      "warning": "",
+      "oficial": ""
+    },
     "captura_imagen_link": ""
   },
   {
@@ -50,8 +62,11 @@
     "link": "https://sites.google.com/view/drive-fiuba/",
     "imagen": "images/fiuba-drive.jpg",
     "categoria": "material_y_apuntes",
-    "observacion": "",
-    "login_info": "",
+    "info_extra": {
+      "login_info": "",
+      "warning": "",
+      "oficial": ""
+    },
     "captura_imagen_link": ""
   },
   {
@@ -61,8 +76,11 @@
     "link": "https://fede.dm/FIUBA-Repos/",
     "imagen": "images/fiuba-repos.jpg",
     "categoria": "material_y_apuntes",
-    "observacion": "",
-    "login_info": "",
+    "info_extra": {
+      "login_info": "",
+      "warning": "",
+      "oficial": ""
+    },
     "captura_imagen_link": ""
   },
   {
@@ -72,8 +90,11 @@
     "link": "https://fiubaar.sharepoint.com/sites/kiwipedia/SitePages/Kiwipedia.aspx",
     "imagen": "images/kiwipedia.jpg",
     "categoria": "material_y_apuntes",
-    "observacion": "",
-    "login_info": "Requiere _login_ con cuenta de OutLook.",
+    "info_extra": {
+      "login_info": "Requiere login con cuenta de OutLook.",
+      "warning": "",
+      "oficial": ""
+    },
     "captura_imagen_link": ""
   },
   {
@@ -83,8 +104,11 @@
     "link": "https://sites.google.com/view/diq-fiuba/p%C3%A1gina-principal?authuser=0",
     "imagen": "images/diq-fiuba.png",
     "categoria": "material_y_apuntes",
-    "observacion": "",
-    "login_info": "",
+    "info_extra": {
+      "login_info": "",
+      "warning": "",
+      "oficial": ""
+    },
     "captura_imagen_link": ""
   },
   {
@@ -94,8 +118,11 @@
     "link": "https://www.facebook.com/groups/fiubaconsultas2",
     "imagen": "images/fiuba-consultas.jpg",
     "categoria": "general",
-    "observacion": "",
-    "login_info": "",
+    "info_extra": {
+      "login_info": "",
+      "warning": "",
+      "oficial": ""
+    },
     "captura_imagen_link": ""
   },
   {
@@ -105,8 +132,11 @@
     "link": "http://www.foros-fiuba.com.ar/",
     "imagen": "images/foros-fiuba.jpg",
     "categoria": "general",
-    "observacion": "En desuso.",
-    "login_info": "",
+    "info_extra": {
+      "login_info": "",
+      "warning": "En desuso",
+      "oficial": ""
+    },
     "captura_imagen_link": ""
   },
   {
@@ -116,8 +146,11 @@
     "link": "https://dollyfiuba.com/",
     "imagen": "images/dolly.jpg",
     "categoria": "cursos_y_opiniones",
-    "observacion": "",
-    "login_info": "",
+    "info_extra": {
+      "login_info": "",
+      "warning": "",
+      "oficial": ""
+    },
     "captura_imagen_link": ""
   },
   {
@@ -127,8 +160,11 @@
     "link": "https://web.archive.org/web/20221103220942/https://fiuba-opiniones-de-curso.herokuapp.com/",
     "imagen": "images/opiniones-fiuba.jpg",
     "categoria": "cursos_y_opiniones",
-    "observacion": "Actualmente caído\nÚltima actualización durante 1C 2021.",
-    "login_info": "",
+    "info_extra": {
+      "login_info": "",
+      "warning": "Actualmente caído\nÚltima actualización durante 1C 2021.",
+      "oficial": ""
+    },
     "captura_imagen_link": ""
   },
   {
@@ -138,8 +174,11 @@
     "link": "https://fede.dm/FIUBA-Map/",
     "imagen": "images/fiuba-map.jpg",
     "categoria": "organizativo",
-    "observacion": "",
-    "login_info": "",
+    "info_extra": {
+      "login_info": "",
+      "warning": "",
+      "oficial": ""
+    },
     "captura_imagen_link": ""
   },
   {
@@ -149,8 +188,11 @@
     "link": "https://fede.dm/FIUBA-Plan/",
     "imagen": "images/fiuba-plan.jpg",
     "categoria": "organizativo",
-    "observacion": "",
-    "login_info": "",
+    "info_extra": {
+      "login_info": "",
+      "warning": "",
+      "oficial": ""
+    },
     "captura_imagen_link": ""
   },
   {
@@ -160,8 +202,11 @@
     "link": "https://fiubaverse.github.io/",
     "imagen": "images/fiubaverse.png",
     "categoria": "grupos",
-    "observacion": "",
-    "login_info": "",
+    "info_extra": {
+      "login_info": "",
+      "warning": "",
+      "oficial": ""
+    },
     "captura_imagen_link": ""
   },
   {
@@ -171,8 +216,11 @@
     "link": "https://linktr.ee/grupos_fiuba",
     "imagen": "images/grupos-fiuba.png",
     "categoria": "grupos",
-    "observacion": "",
-    "login_info": "",
+    "info_extra": {
+      "login_info": "",
+      "warning": "",
+      "oficial": ""
+    },
     "captura_imagen_link": ""
   },
   {
@@ -182,8 +230,11 @@
     "link": "https://t.me/s/FIUBA_Noticias",
     "imagen": "images/telegram-noticias.png",
     "categoria": "noticias",
-    "observacion": "",
-    "login_info": "",
+    "info_extra": {
+      "login_info": "",
+      "warning": "",
+      "oficial": ""
+    },
     "captura_imagen_link": ""
   },
   {
@@ -193,8 +244,11 @@
     "link": "https://www.instagram.com/mli.fiuba/?hl=es-la",
     "imagen": "images/mli.fiuba.png",
     "categoria": "noticias",
-    "observacion": "",
-    "login_info": "",
+    "info_extra": {
+      "login_info": "",
+      "warning": "",
+      "oficial": ""
+    },
     "captura_imagen_link": ""
   },
   {
@@ -204,8 +258,11 @@
     "link": "https://fiuba-apuntes.github.io",
     "imagen": "images/fiuba-apuntes.png",
     "categoria": "material_y_apuntes",
-    "observacion": "Desactualizado",
-    "login_info": "",
+    "info_extra": {
+      "login_info": "",
+      "warning": "Desactualizado",
+      "oficial": ""
+    },
     "captura_imagen_link": ""
   },{
     "id": "comunidad-fiuba",
@@ -214,8 +271,11 @@
     "link": "https://comunidad-fiuba.github.io/",
     "imagen": "images/comunidad-fiuba.png",
     "categoria": "material_y_apuntes",
-    "observacion": "",
-    "login_info": "Requiere crear cuenta.",
+    "info_extra": {
+      "login_info": "Requiere crear cuenta.",
+      "warning": "",
+      "oficial": ""
+    },
     "captura_imagen_link": ""
   },{
     "id": "micrositio-sga",
@@ -224,8 +284,11 @@
     "link": "https://sites.google.com/fi.uba.ar/academica?pli=1&authuser=1",
     "imagen": "images/micrositio-sga.png",
     "categoria": "general",
-    "observacion": "",
-    "login_info": "Requiere login con cuenta institucional.",
+    "info_extra": {
+      "login_info": "Requiere login con cuenta institucional.",
+      "warning": "",
+      "oficial": ""
+    },
     "captura_imagen_link": ""
   },{
     "id": "sitio-oficial",
@@ -234,8 +297,11 @@
     "link": "https://www.fi.uba.ar/",
     "imagen": "images/sitio-oficial.png",
     "categoria": "general",
-    "observacion": "",
-    "login_info": "",
+    "info_extra": {
+      "login_info": "",
+      "warning": "",
+      "oficial": ""
+    },
     "captura_imagen_link": ""
   },{
     "id": "repositorio-institucional",
@@ -244,8 +310,11 @@
     "link": "https://bibliotecadigital.fi.uba.ar/",
     "imagen": "images/repositorio-institucional.png",
     "categoria": "general",
-    "observacion": "",
-    "login_info": "",
+    "info_extra": {
+      "login_info": "",
+      "warning": "",
+      "oficial": ""
+    },
     "captura_imagen_link": ""
   }
 ]
