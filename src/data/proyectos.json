@@ -237,5 +237,15 @@
     "observacion": "",
     "login_info": "",
     "captura_imagen_link": ""
+  },{
+    "id": "repositorio-institucional",
+    "nombre": "Repositorio Institucional - Inga. Elisa Bachofen",
+    "desc": "Repositorio oficial de articulos, ponencias, tesis, libros, apuntes, revistas, etc. de la Facultad de Ingeniería de la UBA.",
+    "link": "https://bibliotecadigital.fi.uba.ar/",
+    "imagen": "images/repositorio-institucional.png",
+    "categoria": "general",
+    "observacion": "",
+    "login_info": "",
+    "captura_imagen_link": ""
   }
 ]
