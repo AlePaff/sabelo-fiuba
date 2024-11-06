@@ -23,6 +23,8 @@ jobs:
         uses: bahmutov/npm-install@v1
 
       - name: Build project
+        env:  # Aquí cargamos los secrets como variables de entorno
+            VITE_TEST_SECRETITO: ${{ secrets.VITE_TEST_SECRETITO }}
         run: npm run build
 
       - name: Upload production-ready build files

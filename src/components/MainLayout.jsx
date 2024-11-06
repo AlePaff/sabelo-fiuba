@@ -31,6 +31,10 @@ function SabeloFiuba() {
   return (
     <>
       <div>
+                
+        {import.meta.env.VITE_TEST_SECRETITO}
+        {console.log(import.meta.env.VITE_TEST_SECRETITO)}
+        {console.log("testing env")}
 
         {/* mapea cada dato del json y crea un componente ProjectCard y de
          acuerdo a la categoria a la que pertenece le crea una seccion */}
