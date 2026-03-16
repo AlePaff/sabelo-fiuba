@@ -123,7 +123,8 @@
     "info_extra": {
       "login_info": "",
       "warning": "",
-      "oficial": ""
+      "oficial": "",
+      "is_alive": false
     },
     "captura_imagen_link": ""
   },
