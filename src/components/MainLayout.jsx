@@ -1,6 +1,7 @@
 import Section from './Section'
 import ProjectCard from './ProjectCard'
 import ProjectList from './ProjectList'
+import RipProjectList from './RipProjectList'
 import Footer from './Footer'
 
 import proyectos from '../data/proyectos.json'
@@ -15,7 +16,8 @@ const bgColorCategorias = {
   "organizativo": "seccion-organizacion",
   "grupos": "seccion-grupos",
   "noticias": "seccion-noticias",
-  "varios": "seccion-varios"
+  "varios": "seccion-varios",
+  "rip": "seccion-rip"
 }
 
 
@@ -24,7 +26,15 @@ function SabeloFiuba() {
   // crear un componente Section por cada categoría
   // pasarle como children los elementos que correspondan a esa categoría
 
-  const categorias = proyectos.map(proyecto => proyecto.categoria)
+  const isProjectRip = (proyecto) => {
+    const isAlive = proyecto?.info_extra?.is_alive
+    return isAlive === false || isAlive === "false"
+  }
+
+  const proyectosRip = proyectos.filter(isProjectRip)
+  const proyectosActivos = proyectos.filter(proyecto => !isProjectRip(proyecto))
+
+  const categorias = proyectosActivos.map(proyecto => proyecto.categoria)
   const categoriasUnicas = [...new Set(categorias)]   // "..." es el spread operator
 
 
@@ -43,7 +53,7 @@ function SabeloFiuba() {
             <Section key={categoriasAll[categoria].titulo} display={"display-cards-grid"} bgColor={bgColorCategorias[categoria] + " section"} titulo={categoriasAll[categoria].titulo} desc={categoriasAll[categoria].desc} footerDesc={categoriasAll[categoria].footerDesc}>
 
               {/* Solo muestra los datos que pertenecen a la categoria */}
-              {proyectos.filter(dato => dato.categoria === categoria).map(dato => {
+              {proyectosActivos.filter(dato => dato.categoria === categoria).map(dato => {
                 return (
                   <ProjectCard
                     key={dato.id}
@@ -78,6 +88,28 @@ function SabeloFiuba() {
             )
           })}
         </Section>
+
+        {/* Seccion RIP */}
+        {proyectosRip.length > 0 && (
+          <div className={bgColorCategorias["rip"] + " section"} style={{ maxWidth: '1800px' }}>
+            <details className='rip-collapse'>
+              <summary className='rip-summary'>RIP</summary>
+              <div className='display-cards-column rip-list'>
+                {proyectosRip.map(dato => {
+                  return (
+                    <RipProjectList
+                      key={dato.id}
+                      id={dato.id}
+                      nombre={dato.nombre}
+                      link={dato.link}
+                      imagen={dato.imagen}
+                    />
+                  )
+                })}
+              </div>
+            </details>
+          </div>
+        )}
       </div>
 
       <Footer></Footer>

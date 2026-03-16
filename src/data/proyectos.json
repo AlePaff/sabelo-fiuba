@@ -9,7 +9,9 @@
     "info_extra": {
       "login_info": "",
       "warning": "",
-      "oficial": ""
+      "oficial": "",
+      "is_alive": false,
+      "alternative_website": "https://web.archive.org/web/20240919135755/http://wiki.foros-fiuba.com.ar/"
     },
     "captura_imagen_link": "http://wiki.foros-fiuba.com.ar/materias:66:70"
   },
@@ -17,7 +19,7 @@
     "id":"sk-fiuba",
     "nombre": "SK FIUBA",
     "desc": "Guias, exámenes y apuntes para las materias de Ingeniería Industrial.",
-    "link": "https://sites.google.com/view/skfiuba/materias?authuser=0",
+    "link": "https://sites.google.com/view/skfiuba/",
     "imagen": "images/sk-fiuba.jpg",
     "categoria": "material_y_apuntes",
     "info_extra": {

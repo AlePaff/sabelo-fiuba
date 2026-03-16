@@ -36,6 +36,9 @@
 	background-color: #EEFFEB;
 }
 
+.seccion-rip {
+	background-color: #f3f3f3;
+}
 
 .display-cards-grid {
 	display: grid;
@@ -50,6 +53,22 @@
 	display: flex;
 	flex-direction: column;
 	gap: 3px;
+}
+
+.rip-collapse {
+	width: 100%;
+}
+
+.rip-summary {
+	font-size: 2rem;
+	font-weight: 700;
+	cursor: pointer;
+	margin-bottom: 0.75rem;
+	user-select: none;
+}
+
+.rip-list {
+	margin-top: 0.5rem;
 }
 
 
