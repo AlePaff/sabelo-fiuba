@@ -101,7 +101,8 @@ function SabeloFiuba() {
                       key={dato.id}
                       id={dato.id}
                       nombre={dato.nombre}
-                      link={dato.link}
+                      desc={dato.desc}
+                      link={dato.info_extra?.alternative_website || dato.link}
                       imagen={dato.imagen}
                     />
                   )

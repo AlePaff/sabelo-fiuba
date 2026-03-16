@@ -1,5 +1,33 @@
 [
   {
+    "id":"repos-fiuba",
+    "nombre": "Repos FIUBA",
+    "desc": "Colección de repositorios con material de cursadas de materias, principalmente Informática.",
+    "link": "https://fede.dm/FIUBA-Repos/",
+    "imagen": "images/fiuba-repos.jpg",
+    "categoria": "material_y_apuntes",
+    "info_extra": {
+      "login_info": "",
+      "warning": "",
+      "oficial": ""
+    },
+    "captura_imagen_link": ""
+  },
+  {
+    "id": "comunidad-fiuba",
+    "nombre": "Comunidad FIUBA",
+    "desc": "Sitio para subir y buscar fácilmente material de la FIUBA (exámenes, resúmenes, etc.).",
+    "link": "https://comunidad-fiuba.github.io/",
+    "imagen": "images/comunidad-fiuba.png",
+    "categoria": "material_y_apuntes",
+    "info_extra": {
+      "login_info": "Requiere crear cuenta.",
+      "warning": "",
+      "oficial": ""
+    },
+    "captura_imagen_link": ""
+  },
+  {
     "id":"wiki-fiuba",
     "nombre": "Wiki FIUBA",
     "desc": "Espacio colaborativo donde podés encontrar materiales de estudio (exámenes, guias, libros, etc.) para cualquier carrera.",
@@ -58,34 +86,6 @@
     "captura_imagen_link": ""
   },
   {
-    "id":"fiuba-drive",
-    "nombre": "Fiuba Drive",
-    "desc": "Drive creado para subir material de tu curso y encontrar el de otros.",
-    "link": "https://sites.google.com/view/drive-fiuba/",
-    "imagen": "images/fiuba-drive.jpg",
-    "categoria": "material_y_apuntes",
-    "info_extra": {
-      "login_info": "",
-      "warning": "",
-      "oficial": ""
-    },
-    "captura_imagen_link": ""
-  },
-  {
-    "id":"repos-fiuba",
-    "nombre": "Repos FIUBA",
-    "desc": "Colección de repositorios con material de cursadas de materias, principalmente Informática.",
-    "link": "https://fede.dm/FIUBA-Repos/",
-    "imagen": "images/fiuba-repos.jpg",
-    "categoria": "material_y_apuntes",
-    "info_extra": {
-      "login_info": "",
-      "warning": "",
-      "oficial": ""
-    },
-    "captura_imagen_link": ""
-  },
-  {
     "id":"kiwipedia",
     "nombre": "Kiwipedia",
     "desc": "Material dividido por departamentos y materias para Ingeniería Industrial.",
@@ -105,6 +105,20 @@
     "desc": "Recolección de material pertinente a la carrera de Ingeniería Química.",
     "link": "https://sites.google.com/view/diq-fiuba/p%C3%A1gina-principal?authuser=0",
     "imagen": "images/diq-fiuba.png",
+    "categoria": "material_y_apuntes",
+    "info_extra": {
+      "login_info": "",
+      "warning": "",
+      "oficial": ""
+    },
+    "captura_imagen_link": ""
+  },
+  {
+    "id":"fiuba-drive",
+    "nombre": "Fiuba Drive",
+    "desc": "Drive creado para subir material de tu curso y encontrar el de otros.",
+    "link": "https://sites.google.com/view/drive-fiuba/",
+    "imagen": "images/fiuba-drive.jpg",
     "categoria": "material_y_apuntes",
     "info_extra": {
       "login_info": "",
@@ -137,7 +151,9 @@
     "info_extra": {
       "login_info": "",
       "warning": "En desuso",
-      "oficial": ""
+      "oficial": "",
+      "is_alive": false,
+      "alternative_website": "https://web.archive.org/web/20240422232432/http://www.foros-fiuba.com.ar/"
     },
     "captura_imagen_link": ""
   },
@@ -151,7 +167,37 @@
     "info_extra": {
       "login_info": "",
       "warning": "",
+      "oficial": "",
+      "is_alive": false,
+      "alternative_website": "https://web.archive.org/web/20241125230006/https://dollyfiuba.com/"
+    },
+    "captura_imagen_link": ""
+  },
+  {
+    "id": "fiuba-reviews",
+    "nombre": "Fiuba Reviews",
+    "desc": "Del autor: 'Encontrá calificaciones y comentarios de los docentes de la facultad, subidos por otros estudiantes. Basado en el legendario Dolly FIUBA.'",
+    "link": "https://fiuba-reviews.com/",
+    "imagen": "images/fiuba-reviews.png",
+    "categoria": "cursos_y_opiniones",
+    "info_extra": {
+      "login_info": "",
+      "warning": "",
       "oficial": ""
+    },
+    "captura_imagen_link": ""
+  },
+  {
+    "id": "encuestas-estudiantiles",
+    "nombre": "Encuestas Estudiantiles",
+    "desc": "Encuestas oficiales con opiniones de estudiantes sobre cada cátedra y materia de la FIUBA.",
+    "link": "https://sites.google.com/fi.uba.ar/academica/encuestas",
+    "imagen": "images/encuestas-fiuba.png",
+    "categoria": "cursos_y_opiniones",
+    "info_extra": {
+      "login_info": "Requiere login con cuenta institucional.",
+      "warning": "",
+      "oficial": "Oficial de la FIUBA"
     },
     "captura_imagen_link": ""
   },
@@ -186,7 +232,7 @@
   {
     "id": "fiuba-plan",
     "nombre": "FIUBA Plan",
-    "desc": "Organizador de horarios.",
+    "desc": "Organizador de horarios en base a la información proporcionada por el SIU Guarani",
     "link": "https://fede.dm/FIUBA-Plan/",
     "imagen": "images/fiuba-plan.jpg",
     "categoria": "organizativo",
@@ -266,20 +312,8 @@
       "oficial": ""
     },
     "captura_imagen_link": ""
-  },{
-    "id": "comunidad-fiuba",
-    "nombre": "Comunidad FIUBA",
-    "desc": "Sitio para subir y buscar fácilmente material de la FIUBA (exámenes, resúmenes, etc.).",
-    "link": "https://comunidad-fiuba.github.io/",
-    "imagen": "images/comunidad-fiuba.png",
-    "categoria": "material_y_apuntes",
-    "info_extra": {
-      "login_info": "Requiere crear cuenta.",
-      "warning": "",
-      "oficial": ""
-    },
-    "captura_imagen_link": ""
-  },{
+  },
+  {
     "id": "micrositio-sga",
     "nombre": "Micrositio Secretaría de Gestión Académica",
     "desc": "Web con información actualizada sobre trámites, inscripciones, asignaturas, planes de estudio, encuestas del SIU Guarani y diferentes accesos a los sistemas académicos.",
