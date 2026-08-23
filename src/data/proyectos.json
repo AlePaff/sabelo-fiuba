@@ -175,6 +175,20 @@
     "captura_imagen_link": ""
   },
   {
+    "id": "doc-informatica",
+    "nombre": "Modalidades cursada informatica",
+    "desc": "Modalidades de cursada para materias de informática, resumen sobre nivel de presencialidad de un curso, qué días serían, nivel de asistencia, condiciones, regimen, etc. para materias de informatica. Hecho por Martín Buchwald.",
+    "link": "https://docs.google.com/document/d/1oeEuieZ5gfdVL36f1WZh88eMt8ICql4JAwYLe9Fxn7M/",
+    "imagen": "images/modalidades-doc.png",
+    "categoria": "cursos_y_opiniones",
+    "info_extra": {
+      "login_info": "",
+      "warning": "",
+      "oficial": ""
+    },
+    "captura_imagen_link": ""
+  },
+  {
     "id": "fiuba-reviews",
     "nombre": "Fiuba Reviews",
     "desc": "Del autor: 'Encontrá calificaciones y comentarios de los docentes de la facultad, subidos por otros estudiantes. Basado en el legendario Dolly FIUBA.'",
@@ -237,6 +251,34 @@
     "link": "https://fede.dm/FIUBA-Plan/",
     "imagen": "images/fiuba-plan.jpg",
     "categoria": "organizativo",
+    "info_extra": {
+      "login_info": "",
+      "warning": "",
+      "oficial": ""
+    },
+    "captura_imagen_link": ""
+  },
+  {
+    "id": "grupos-whatsapp-alumnos",
+    "nombre": "Grupos de WhatsApp por alumnos",
+    "desc": "Links a grupos de WhatsApp hecho por alumnos.",
+    "link": "https://docs.google.com/spreadsheets/d/1jMAcOXs5IxReg8Br20csU1RMSpAJ4PeGsQ1-ATa6CNE/edit",
+    "imagen": "images/grupos-alumnos.png",
+    "categoria": "grupos",
+    "info_extra": {
+      "login_info": "",
+      "warning": "",
+      "oficial": ""
+    },
+    "captura_imagen_link": ""
+  },
+  {
+    "id": "la-pizarra-online",
+    "nombre": "La pizarra online",
+    "desc": "Grupos de WhatsApp. Hecho por la pizarra online.",
+    "link": "https://linktr.ee/lapizarraonline",
+    "imagen": "images/pizarraonline.png",
+    "categoria": "grupos",
     "info_extra": {
       "login_info": "",
       "warning": "",
@@ -340,12 +382,69 @@
       "oficial": "Oficial de la FIUBA"
     },
     "captura_imagen_link": ""
-  },{
+  },
+  {
     "id": "repositorio-institucional",
     "nombre": "Repositorio Institucional - Inga. Elisa Bachofen",
     "desc": "Repositorio oficial de articulos, ponencias, tesis, libros, apuntes, revistas, etc. de la Facultad de Ingeniería de la UBA.",
     "link": "https://bibliotecadigital.fi.uba.ar/",
     "imagen": "images/repositorio-institucional.png",
+    "categoria": "general",
+    "info_extra": {
+      "login_info": "",
+      "warning": "",
+      "oficial": "Oficial de la FIUBA"
+    },
+    "captura_imagen_link": ""
+  },
+  {
+    "id": "espacioteca",
+    "nombre": "Espacioteca",
+    "desc": "Biblioteca digital",
+    "link": "https://drive.google.com/drive/folders/1eJM-17ZNOV2_zmYqOqTpAZ7Mm9IupKSp",
+    "imagen": "images/espacioteca.png",
+    "categoria": "general",
+    "info_extra": {
+      "login_info": "",
+      "warning": "",
+      "oficial": ""
+    },
+    "captura_imagen_link": ""
+  },
+  {
+    "id": "bolsa-de-trabajo",
+    "nombre": "Bolsa de trabajo",
+    "desc": "Bolsa de trabajo oficial de la FIUBA, con oportunidades laborales y prácticas para estudiantes.",
+    "link": "https://bolsadetrabajo.fi.uba.ar/#/iniciar-sesion",
+    "imagen": "images/bolsa-de-trabajo.png",
+    "categoria": "general",
+    "info_extra": {
+      "login_info": "",
+      "warning": "",
+      "oficial": "Oficial de la FIUBA"
+    },
+    "captura_imagen_link": ""
+  },
+  {
+    "id": "siu-guarani",
+    "nombre": "SIU Guarani",
+    "desc": "Sistema de gestión académica de la FIUBA, donde se pueden ver las materias, horarios, inscripciones, calificaciones y demás información académica.",
+    "link": "https://guaraniautogestion.fi.uba.ar/g3w/",
+    "imagen": "images/siu.png",
+    "categoria": "general",
+    "info_extra": {
+      "login_info": "",
+      "warning": "",
+      "oficial": "Oficial de la FIUBA"
+    },
+    "captura_imagen_link": ""
+  },
+  {
+    "id": "calendario-academico",
+    "nombre": "Calendario Academico",
+    "desc": "Calendario académico oficial de la FIUBA, con fechas de inicio y fin de cursadas, exámenes, inscripciones, feriados y demás.",
+    "link": "https://www.fi.uba.ar/estudiantes/calendario-academico",
+    "imagen": "images/calendario.png",
     "categoria": "general",
     "info_extra": {
       "login_info": "",
