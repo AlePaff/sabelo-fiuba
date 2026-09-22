@@ -452,5 +452,20 @@
       "oficial": "Oficial de la FIUBA"
     },
     "captura_imagen_link": ""
+  },
+  {
+    "id": "conecta-bibliotecadigital",
+    "nombre": "Repositorio Conecta",
+    "desc": "Un sistema desarrollado con IA, para acceder rápidamente al objeto de estudio, la problemática a resolver, el contexto y los contactos con los autores y autoras de las tesis de grado, posgrado y doctorado de la comunidad de la FIUBA.",
+    "link": "https://conecta-bibliotecadigital.fi.uba.ar/",
+    "imagen": "images/conecta-bibliotecadigital.png",
+    "categoria": "general",
+    "info_extra": {
+      "login_info": "",
+      "warning": "",
+      "oficial": "Oficial de la FIUBA"
+    },
+    "captura_imagen_link": ""
   }
 ]
+

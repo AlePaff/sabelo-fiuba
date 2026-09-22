@@ -12,6 +12,18 @@
       "Visitas (inicialmente privado)": ""
     },
     {
+      "id": "catalogo-dep-computacion-fiuba",
+      "nombre": "Catálogo Depto. Computacion",
+      "desc": "Para ver libros disponibles en el depto de computación para su uso.",
+      "link": "https://docs.google.com/spreadsheets/d/1fJGy6uIsB-2eZwf1wci-y_y-WxyrZisrOz6CPGiiIHU/edit",
+      "imagen": "",
+      "categoria": "varios",
+      "observacion": "",
+      "login_info": "",
+      "captura_imagen_link": "",
+      "Visitas (inicialmente privado)": ""
+    },
+    {
       "id": "precios-libreria",
       "nombre": "Precios librería",
       "desc": "Lista de precios de la librería de la sede de Paseo Colón.",
